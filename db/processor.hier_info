@@ -1,112 +1,337 @@
-|alu
-data_operandA[0] => ~NO_FANOUT~
-data_operandA[1] => ~NO_FANOUT~
-data_operandA[2] => ~NO_FANOUT~
-data_operandA[3] => ~NO_FANOUT~
-data_operandA[4] => ~NO_FANOUT~
-data_operandA[5] => ~NO_FANOUT~
-data_operandA[6] => ~NO_FANOUT~
-data_operandA[7] => ~NO_FANOUT~
-data_operandA[8] => ~NO_FANOUT~
-data_operandA[9] => ~NO_FANOUT~
-data_operandA[10] => ~NO_FANOUT~
-data_operandA[11] => ~NO_FANOUT~
-data_operandA[12] => ~NO_FANOUT~
-data_operandA[13] => ~NO_FANOUT~
-data_operandA[14] => ~NO_FANOUT~
-data_operandA[15] => ~NO_FANOUT~
-data_operandA[16] => ~NO_FANOUT~
-data_operandA[17] => ~NO_FANOUT~
-data_operandA[18] => ~NO_FANOUT~
-data_operandA[19] => ~NO_FANOUT~
-data_operandA[20] => ~NO_FANOUT~
-data_operandA[21] => ~NO_FANOUT~
-data_operandA[22] => ~NO_FANOUT~
-data_operandA[23] => ~NO_FANOUT~
-data_operandA[24] => ~NO_FANOUT~
-data_operandA[25] => ~NO_FANOUT~
-data_operandA[26] => ~NO_FANOUT~
-data_operandA[27] => ~NO_FANOUT~
-data_operandA[28] => ~NO_FANOUT~
-data_operandA[29] => ~NO_FANOUT~
-data_operandA[30] => ~NO_FANOUT~
-data_operandA[31] => ~NO_FANOUT~
-data_operandB[0] => ~NO_FANOUT~
-data_operandB[1] => ~NO_FANOUT~
-data_operandB[2] => ~NO_FANOUT~
-data_operandB[3] => ~NO_FANOUT~
-data_operandB[4] => ~NO_FANOUT~
-data_operandB[5] => ~NO_FANOUT~
-data_operandB[6] => ~NO_FANOUT~
-data_operandB[7] => ~NO_FANOUT~
-data_operandB[8] => ~NO_FANOUT~
-data_operandB[9] => ~NO_FANOUT~
-data_operandB[10] => ~NO_FANOUT~
-data_operandB[11] => ~NO_FANOUT~
-data_operandB[12] => ~NO_FANOUT~
-data_operandB[13] => ~NO_FANOUT~
-data_operandB[14] => ~NO_FANOUT~
-data_operandB[15] => ~NO_FANOUT~
-data_operandB[16] => ~NO_FANOUT~
-data_operandB[17] => ~NO_FANOUT~
-data_operandB[18] => ~NO_FANOUT~
-data_operandB[19] => ~NO_FANOUT~
-data_operandB[20] => ~NO_FANOUT~
-data_operandB[21] => ~NO_FANOUT~
-data_operandB[22] => ~NO_FANOUT~
-data_operandB[23] => ~NO_FANOUT~
-data_operandB[24] => ~NO_FANOUT~
-data_operandB[25] => ~NO_FANOUT~
-data_operandB[26] => ~NO_FANOUT~
-data_operandB[27] => ~NO_FANOUT~
-data_operandB[28] => ~NO_FANOUT~
-data_operandB[29] => ~NO_FANOUT~
-data_operandB[30] => ~NO_FANOUT~
-data_operandB[31] => ~NO_FANOUT~
-ctrl_ALUopcode[0] => ~NO_FANOUT~
-ctrl_ALUopcode[1] => ~NO_FANOUT~
-ctrl_ALUopcode[2] => ~NO_FANOUT~
-ctrl_ALUopcode[3] => ~NO_FANOUT~
-ctrl_ALUopcode[4] => ~NO_FANOUT~
-ctrl_shiftamt[0] => ~NO_FANOUT~
-ctrl_shiftamt[1] => ~NO_FANOUT~
-ctrl_shiftamt[2] => ~NO_FANOUT~
-ctrl_shiftamt[3] => ~NO_FANOUT~
-ctrl_shiftamt[4] => ~NO_FANOUT~
-data_result[0] <= <GND>
-data_result[1] <= <GND>
-data_result[2] <= <GND>
-data_result[3] <= <GND>
-data_result[4] <= <GND>
-data_result[5] <= <GND>
-data_result[6] <= <GND>
-data_result[7] <= <GND>
-data_result[8] <= <GND>
-data_result[9] <= <GND>
-data_result[10] <= <GND>
-data_result[11] <= <GND>
-data_result[12] <= <GND>
-data_result[13] <= <GND>
-data_result[14] <= <GND>
-data_result[15] <= <GND>
-data_result[16] <= <GND>
-data_result[17] <= <GND>
-data_result[18] <= <GND>
-data_result[19] <= <GND>
-data_result[20] <= <GND>
-data_result[21] <= <GND>
-data_result[22] <= <GND>
-data_result[23] <= <GND>
-data_result[24] <= <GND>
-data_result[25] <= <GND>
-data_result[26] <= <GND>
-data_result[27] <= <GND>
-data_result[28] <= <GND>
-data_result[29] <= <GND>
-data_result[30] <= <GND>
-data_result[31] <= <GND>
-isNotEqual <= <GND>
-isLessThan <= <GND>
-overflow <= <GND>
+|eight_bit_look_ahead_adder
+a[0] => a[0].IN8
+a[1] => a[1].IN7
+a[2] => a[2].IN6
+a[3] => a[3].IN5
+a[4] => a[4].IN4
+a[5] => a[5].IN3
+a[6] => a[6].IN2
+a[7] => a[7].IN1
+b[0] => b[0].IN8
+b[1] => b[1].IN7
+b[2] => b[2].IN6
+b[3] => b[3].IN5
+b[4] => b[4].IN4
+b[5] => b[5].IN3
+b[6] => b[6].IN2
+b[7] => b[7].IN1
+cin => cin.IN8
+sum[0] <= one_bit_adder:add1.port3
+sum[1] <= one_bit_adder:add2.port3
+sum[2] <= one_bit_adder:add3.port3
+sum[3] <= one_bit_adder:add4.port3
+sum[4] <= one_bit_adder:add5.port3
+sum[5] <= one_bit_adder:add6.port3
+sum[6] <= one_bit_adder:add7.port3
+sum[7] <= one_bit_adder:add8.port3
+cout <= c:c207.port3
+
+
+|eight_bit_look_ahead_adder|one_bit_adder:add1
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|one_bit_adder:add2
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c1
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c2
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|one_bit_adder:add3
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c3
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c4
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c5
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|one_bit_adder:add4
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c6
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c7
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c8
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c9
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|one_bit_adder:add5
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c10
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c11
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c12
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c13
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c14
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|one_bit_adder:add6
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c15
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c16
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c17
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c18
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c19
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c20
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|one_bit_adder:add7
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c201
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c202
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c203
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c204
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c205
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c206
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|c:c207
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_look_ahead_adder|one_bit_adder:add8
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
 
 

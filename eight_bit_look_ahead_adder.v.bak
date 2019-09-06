@@ -1,0 +1,14 @@
+module eight_bit_look_ahead_adder(a, b, cin, sum, cout);
+input [7:0] a, b;
+input cin;
+output [7:0] sum;
+output cout;
+
+//1st adder
+one_bit_adder add1(a[0], b[0], cin, sum[0]);
+
+//2nd adder
+
+
+
+endmodule

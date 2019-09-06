@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/simulation/qsim
+veight_bit_look_ahead_adder
+Z1 !s110 1567808853
+!i10b 1
+!s100 8]ObBTAOcf4TRITLkmO_X0
+IofV_oUT=KdNZ;ENOz^9PW3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1567808852
+Z3 8processor.vo
+Z4 Fprocessor.vo
+Z5 L0 32
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1567808853.000000
+Z8 !s107 processor.vo|
+Z9 !s90 -work|work|processor.vo|
+!i113 1
+Z10 o-work work
+veight_bit_look_ahead_adder_vlg_vec_tst
+R1
+!i10b 1
+!s100 ZmzjYaRK5J0kYo1]d`hdI2
+Iz=j5d;IXbA5h=UAGLc]aE0
+R2
+R0
+w1567808850
+8eight_bit_adder_tester.vwf.vt
+Feight_bit_adder_tester.vwf.vt
+Z11 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 eight_bit_adder_tester.vwf.vt|
+!s90 -work|work|eight_bit_adder_tester.vwf.vt|
+!i113 1
+R10
+vone_bit_adder
+Z12 !s110 1567807187
+!i10b 1
+!s100 Rn<n_09[o=^6N7zUDNOA60
+I46Nm[33OSGLMz82:4]o^J1
+R2
+R0
+w1567807183
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z13 !s108 1567807187.000000
+R8
+R9
+!i113 1
+R10
+vone_bit_adder_vlg_vec_tst
+R12
+!i10b 1
+!s100 c4mJlLY>YfN_z<ZJ[z:Y61
+IQNJJE1Kh>UhM;d]d;J1;i3
+R2
+R0
+w1567807182
+8one_bit_adder_tester.vwf.vt
+Fone_bit_adder_tester.vwf.vt
+R11
+R6
+r1
+!s85 0
+31
+R13
+!s107 one_bit_adder_tester.vwf.vt|
+!s90 -work|work|one_bit_adder_tester.vwf.vt|
+!i113 1
+R10
