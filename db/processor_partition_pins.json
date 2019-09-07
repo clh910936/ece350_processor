@@ -4,131 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "sum[0]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[2]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[3]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[4]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[5]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[6]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[7]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[8]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[9]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[10]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[11]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[12]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[13]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[14]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[15]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[16]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[17]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[18]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[19]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[20]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[21]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[22]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[23]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[24]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[25]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[26]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[27]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[28]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[29]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[30]",
-					"strict" : false
-				},
-				{
-					"name" : "sum[31]",
+					"name" : "data_result[0]",
 					"strict" : false
 				},
 				{
@@ -136,263 +12,263 @@
 					"strict" : false
 				},
 				{
-					"name" : "a[0]",
+					"name" : "ctrl_ALUopcode[1]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[0]",
+					"name" : "data_operandB[0]",
 					"strict" : false
 				},
 				{
-					"name" : "a[1]",
+					"name" : "ctrl_ALUopcode[0]",
 					"strict" : false
 				},
 				{
-					"name" : "c0",
+					"name" : "data_operandA[0]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[1]",
+					"name" : "ctrl_ALUopcode[2]",
 					"strict" : false
 				},
 				{
-					"name" : "a[2]",
+					"name" : "data_operandB[31]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[2]",
+					"name" : "data_operandA[31]",
 					"strict" : false
 				},
 				{
-					"name" : "a[3]",
+					"name" : "data_operandB[30]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[3]",
+					"name" : "data_operandA[30]",
 					"strict" : false
 				},
 				{
-					"name" : "a[4]",
+					"name" : "data_operandB[29]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[4]",
+					"name" : "data_operandA[29]",
 					"strict" : false
 				},
 				{
-					"name" : "a[5]",
+					"name" : "data_operandB[28]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[5]",
+					"name" : "data_operandA[28]",
 					"strict" : false
 				},
 				{
-					"name" : "a[6]",
+					"name" : "data_operandB[27]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[6]",
+					"name" : "data_operandA[27]",
 					"strict" : false
 				},
 				{
-					"name" : "a[7]",
+					"name" : "data_operandB[26]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[7]",
+					"name" : "data_operandA[26]",
 					"strict" : false
 				},
 				{
-					"name" : "a[8]",
+					"name" : "data_operandB[25]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[8]",
+					"name" : "data_operandA[25]",
 					"strict" : false
 				},
 				{
-					"name" : "a[9]",
+					"name" : "data_operandB[24]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[9]",
+					"name" : "data_operandA[24]",
 					"strict" : false
 				},
 				{
-					"name" : "a[10]",
+					"name" : "data_operandB[22]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[10]",
+					"name" : "data_operandA[22]",
 					"strict" : false
 				},
 				{
-					"name" : "a[11]",
+					"name" : "data_operandB[21]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[11]",
+					"name" : "data_operandA[21]",
 					"strict" : false
 				},
 				{
-					"name" : "a[12]",
+					"name" : "data_operandB[20]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[12]",
+					"name" : "data_operandA[20]",
 					"strict" : false
 				},
 				{
-					"name" : "a[13]",
+					"name" : "data_operandB[19]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[13]",
+					"name" : "data_operandA[19]",
 					"strict" : false
 				},
 				{
-					"name" : "a[14]",
+					"name" : "data_operandB[18]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[14]",
+					"name" : "data_operandA[18]",
 					"strict" : false
 				},
 				{
-					"name" : "a[15]",
+					"name" : "data_operandB[17]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[15]",
+					"name" : "data_operandA[17]",
 					"strict" : false
 				},
 				{
-					"name" : "a[16]",
+					"name" : "data_operandB[16]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[16]",
+					"name" : "data_operandA[16]",
 					"strict" : false
 				},
 				{
-					"name" : "a[17]",
+					"name" : "data_operandB[15]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[17]",
+					"name" : "data_operandA[15]",
 					"strict" : false
 				},
 				{
-					"name" : "a[18]",
+					"name" : "data_operandB[14]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[18]",
+					"name" : "data_operandA[14]",
 					"strict" : false
 				},
 				{
-					"name" : "a[19]",
+					"name" : "data_operandB[13]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[19]",
+					"name" : "data_operandA[13]",
 					"strict" : false
 				},
 				{
-					"name" : "a[20]",
+					"name" : "data_operandB[12]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[20]",
+					"name" : "data_operandA[12]",
 					"strict" : false
 				},
 				{
-					"name" : "a[21]",
+					"name" : "data_operandB[11]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[21]",
+					"name" : "data_operandA[11]",
 					"strict" : false
 				},
 				{
-					"name" : "a[22]",
+					"name" : "data_operandB[10]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[22]",
+					"name" : "data_operandA[10]",
 					"strict" : false
 				},
 				{
-					"name" : "a[23]",
+					"name" : "data_operandB[9]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[23]",
+					"name" : "data_operandA[9]",
 					"strict" : false
 				},
 				{
-					"name" : "a[24]",
+					"name" : "data_operandB[8]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[24]",
+					"name" : "data_operandA[8]",
 					"strict" : false
 				},
 				{
-					"name" : "a[25]",
+					"name" : "data_operandB[7]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[25]",
+					"name" : "data_operandA[7]",
 					"strict" : false
 				},
 				{
-					"name" : "a[26]",
+					"name" : "data_operandB[6]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[26]",
+					"name" : "data_operandA[6]",
 					"strict" : false
 				},
 				{
-					"name" : "a[27]",
+					"name" : "data_operandB[5]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[27]",
+					"name" : "data_operandA[5]",
 					"strict" : false
 				},
 				{
-					"name" : "a[28]",
+					"name" : "data_operandB[4]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[28]",
+					"name" : "data_operandA[4]",
 					"strict" : false
 				},
 				{
-					"name" : "a[29]",
+					"name" : "data_operandB[3]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[29]",
+					"name" : "data_operandA[3]",
 					"strict" : false
 				},
 				{
-					"name" : "a[30]",
+					"name" : "data_operandB[2]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[30]",
+					"name" : "data_operandA[2]",
 					"strict" : false
 				},
 				{
-					"name" : "a[31]",
+					"name" : "data_operandB[1]",
 					"strict" : false
 				},
 				{
-					"name" : "bOriginal[31]",
+					"name" : "data_operandA[1]",
 					"strict" : false
 				}
 			]
