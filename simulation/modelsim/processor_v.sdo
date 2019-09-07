@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "eight_bit_look_ahead_adder")
-  (DATE "09/06/2019 18:24:50")
+  (DATE "09/06/2019 20:17:41")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition")

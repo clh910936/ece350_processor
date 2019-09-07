@@ -1,4 +1,477 @@
-|eight_bit_look_ahead_adder
+|full_adder
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+a[4] => a[4].IN2
+a[5] => a[5].IN2
+a[6] => a[6].IN2
+a[7] => a[7].IN3
+a[8] => a[8].IN2
+a[9] => a[9].IN2
+a[10] => a[10].IN2
+a[11] => a[11].IN2
+a[12] => a[12].IN2
+a[13] => a[13].IN2
+a[14] => a[14].IN2
+a[15] => a[15].IN3
+a[16] => a[16].IN2
+a[17] => a[17].IN2
+a[18] => a[18].IN2
+a[19] => a[19].IN2
+a[20] => a[20].IN2
+a[21] => a[21].IN2
+a[22] => a[22].IN2
+a[23] => a[23].IN2
+a[24] => a[24].IN2
+a[25] => a[25].IN2
+a[26] => a[26].IN2
+a[27] => a[27].IN2
+a[28] => a[28].IN2
+a[29] => a[29].IN2
+a[30] => a[30].IN2
+a[31] => a[31].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+b[4] => b[4].IN2
+b[5] => b[5].IN2
+b[6] => b[6].IN2
+b[7] => b[7].IN3
+b[8] => b[8].IN2
+b[9] => b[9].IN2
+b[10] => b[10].IN2
+b[11] => b[11].IN2
+b[12] => b[12].IN2
+b[13] => b[13].IN2
+b[14] => b[14].IN2
+b[15] => b[15].IN3
+b[16] => b[16].IN2
+b[17] => b[17].IN2
+b[18] => b[18].IN2
+b[19] => b[19].IN2
+b[20] => b[20].IN2
+b[21] => b[21].IN2
+b[22] => b[22].IN2
+b[23] => b[23].IN2
+b[24] => b[24].IN2
+b[25] => b[25].IN2
+b[26] => b[26].IN2
+b[27] => b[27].IN2
+b[28] => b[28].IN2
+b[29] => b[29].IN2
+b[30] => b[30].IN2
+b[31] => b[31].IN2
+c0 => c0.IN2
+sum[0] << eight_bit_look_ahead_adder:adder1.port3
+sum[1] << eight_bit_look_ahead_adder:adder1.port3
+sum[2] << eight_bit_look_ahead_adder:adder1.port3
+sum[3] << eight_bit_look_ahead_adder:adder1.port3
+sum[4] << eight_bit_look_ahead_adder:adder1.port3
+sum[5] << eight_bit_look_ahead_adder:adder1.port3
+sum[6] << eight_bit_look_ahead_adder:adder1.port3
+sum[7] << eight_bit_look_ahead_adder:adder1.port3
+sum[8] << eight_bit_look_ahead_adder:adder2.port3
+sum[9] << eight_bit_look_ahead_adder:adder2.port3
+sum[10] << eight_bit_look_ahead_adder:adder2.port3
+sum[11] << eight_bit_look_ahead_adder:adder2.port3
+sum[12] << eight_bit_look_ahead_adder:adder2.port3
+sum[13] << eight_bit_look_ahead_adder:adder2.port3
+sum[14] << eight_bit_look_ahead_adder:adder2.port3
+sum[15] << eight_bit_look_ahead_adder:adder2.port3
+sum[16] << eight_bit_look_ahead_adder:adder3.port3
+sum[17] << eight_bit_look_ahead_adder:adder3.port3
+sum[18] << eight_bit_look_ahead_adder:adder3.port3
+sum[19] << eight_bit_look_ahead_adder:adder3.port3
+sum[20] << eight_bit_look_ahead_adder:adder3.port3
+sum[21] << eight_bit_look_ahead_adder:adder3.port3
+sum[22] << eight_bit_look_ahead_adder:adder3.port3
+sum[23] << eight_bit_look_ahead_adder:adder3.port3
+sum[24] << eight_bit_look_ahead_adder:adder4.port3
+sum[25] << eight_bit_look_ahead_adder:adder4.port3
+sum[26] << eight_bit_look_ahead_adder:adder4.port3
+sum[27] << eight_bit_look_ahead_adder:adder4.port3
+sum[28] << eight_bit_look_ahead_adder:adder4.port3
+sum[29] << eight_bit_look_ahead_adder:adder4.port3
+sum[30] << eight_bit_look_ahead_adder:adder4.port3
+sum[31] << eight_bit_look_ahead_adder:adder4.port3
+overflow << c_8:cc32.port3
+
+
+|full_adder|c_8:cc8
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c0 => c0.IN1
+c8 <= c:c28.port3
+
+
+|full_adder|c_8:cc8|c:c21
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc8|c:c22
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc8|c:c23
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc8|c:c24
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc8|c:c25
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc8|c:c26
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc8|c:c27
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc8|c:c28
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc16
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c0 => c0.IN1
+c8 <= c:c28.port3
+
+
+|full_adder|c_8:cc16|c:c21
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc16|c:c22
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc16|c:c23
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc16|c:c24
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc16|c:c25
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc16|c:c26
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc16|c:c27
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc16|c:c28
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc24
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c0 => c0.IN1
+c8 <= c:c28.port3
+
+
+|full_adder|c_8:cc24|c:c21
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc24|c:c22
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc24|c:c23
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc24|c:c24
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc24|c:c25
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc24|c:c26
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc24|c:c27
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc24|c:c28
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc32
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+c0 => c0.IN1
+c8 <= c:c28.port3
+
+
+|full_adder|c_8:cc32|c:c21
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc32|c:c22
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc32|c:c23
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc32|c:c24
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc32|c:c25
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc32|c:c26
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc32|c:c27
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|c_8:cc32|c:c28
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder1
 a[0] => a[0].IN8
 a[1] => a[1].IN7
 a[2] => a[2].IN6
@@ -27,14 +500,14 @@ sum[7] <= one_bit_adder:add8.port3
 cout <= c:c207.port3
 
 
-|eight_bit_look_ahead_adder|one_bit_adder:add1
+|full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add1
 a => xor1.IN0
 b => xor1.IN1
 cin => xor2.IN1
 sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -43,14 +516,14 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|one_bit_adder:add2
+|full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add2
 a => xor1.IN0
 b => xor1.IN1
 cin => xor2.IN1
 sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c1
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c1
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -59,7 +532,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c2
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c2
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -68,14 +541,14 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|one_bit_adder:add3
+|full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add3
 a => xor1.IN0
 b => xor1.IN1
 cin => xor2.IN1
 sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c3
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c3
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -84,7 +557,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c4
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c4
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -93,7 +566,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c5
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c5
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -102,14 +575,14 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|one_bit_adder:add4
+|full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add4
 a => xor1.IN0
 b => xor1.IN1
 cin => xor2.IN1
 sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c6
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c6
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -118,7 +591,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c7
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c7
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -127,7 +600,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c8
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c8
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -136,7 +609,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c9
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c9
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -145,14 +618,14 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|one_bit_adder:add5
+|full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add5
 a => xor1.IN0
 b => xor1.IN1
 cin => xor2.IN1
 sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c10
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c10
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -161,7 +634,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c11
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c11
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -170,7 +643,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c12
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c12
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -179,7 +652,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c13
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c13
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -188,7 +661,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c14
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c14
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -197,14 +670,14 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|one_bit_adder:add6
+|full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add6
 a => xor1.IN0
 b => xor1.IN1
 cin => xor2.IN1
 sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c15
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c15
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -213,7 +686,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c16
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c16
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -222,7 +695,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c17
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c17
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -231,7 +704,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c18
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c18
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -240,7 +713,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c19
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c19
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -249,7 +722,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c20
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c20
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -258,14 +731,14 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|one_bit_adder:add7
+|full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add7
 a => xor1.IN0
 b => xor1.IN1
 cin => xor2.IN1
 sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c201
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c201
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -274,7 +747,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c202
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c202
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -283,7 +756,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c203
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c203
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -292,7 +765,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c204
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c204
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -301,7 +774,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c205
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c205
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -310,7 +783,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c206
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c206
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -319,7 +792,7 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|c:c207
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c207
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1
@@ -328,7 +801,1018 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|eight_bit_look_ahead_adder|one_bit_adder:add8
+|full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add8
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2
+a[0] => a[0].IN8
+a[1] => a[1].IN7
+a[2] => a[2].IN6
+a[3] => a[3].IN5
+a[4] => a[4].IN4
+a[5] => a[5].IN3
+a[6] => a[6].IN2
+a[7] => a[7].IN1
+b[0] => b[0].IN8
+b[1] => b[1].IN7
+b[2] => b[2].IN6
+b[3] => b[3].IN5
+b[4] => b[4].IN4
+b[5] => b[5].IN3
+b[6] => b[6].IN2
+b[7] => b[7].IN1
+cin => cin.IN8
+sum[0] <= one_bit_adder:add1.port3
+sum[1] <= one_bit_adder:add2.port3
+sum[2] <= one_bit_adder:add3.port3
+sum[3] <= one_bit_adder:add4.port3
+sum[4] <= one_bit_adder:add5.port3
+sum[5] <= one_bit_adder:add6.port3
+sum[6] <= one_bit_adder:add7.port3
+sum[7] <= one_bit_adder:add8.port3
+cout <= c:c207.port3
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add1
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add2
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c1
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c2
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add3
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c3
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c4
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c5
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add4
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c6
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c7
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c8
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c9
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add5
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c10
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c11
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c12
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c13
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c14
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add6
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c15
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c16
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c17
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c18
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c19
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c20
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add7
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c201
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c202
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c203
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c204
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c205
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c206
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c207
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add8
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3
+a[0] => a[0].IN8
+a[1] => a[1].IN7
+a[2] => a[2].IN6
+a[3] => a[3].IN5
+a[4] => a[4].IN4
+a[5] => a[5].IN3
+a[6] => a[6].IN2
+a[7] => a[7].IN1
+b[0] => b[0].IN8
+b[1] => b[1].IN7
+b[2] => b[2].IN6
+b[3] => b[3].IN5
+b[4] => b[4].IN4
+b[5] => b[5].IN3
+b[6] => b[6].IN2
+b[7] => b[7].IN1
+cin => cin.IN8
+sum[0] <= one_bit_adder:add1.port3
+sum[1] <= one_bit_adder:add2.port3
+sum[2] <= one_bit_adder:add3.port3
+sum[3] <= one_bit_adder:add4.port3
+sum[4] <= one_bit_adder:add5.port3
+sum[5] <= one_bit_adder:add6.port3
+sum[6] <= one_bit_adder:add7.port3
+sum[7] <= one_bit_adder:add8.port3
+cout <= c:c207.port3
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add1
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add2
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c1
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c2
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add3
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c3
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c4
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c5
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add4
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c6
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c7
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c8
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c9
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add5
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c10
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c11
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c12
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c13
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c14
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add6
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c15
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c16
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c17
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c18
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c19
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c20
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add7
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c201
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c202
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c203
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c204
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c205
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c206
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c207
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add8
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4
+a[0] => a[0].IN8
+a[1] => a[1].IN7
+a[2] => a[2].IN6
+a[3] => a[3].IN5
+a[4] => a[4].IN4
+a[5] => a[5].IN3
+a[6] => a[6].IN2
+a[7] => a[7].IN1
+b[0] => b[0].IN8
+b[1] => b[1].IN7
+b[2] => b[2].IN6
+b[3] => b[3].IN5
+b[4] => b[4].IN4
+b[5] => b[5].IN3
+b[6] => b[6].IN2
+b[7] => b[7].IN1
+cin => cin.IN8
+sum[0] <= one_bit_adder:add1.port3
+sum[1] <= one_bit_adder:add2.port3
+sum[2] <= one_bit_adder:add3.port3
+sum[3] <= one_bit_adder:add4.port3
+sum[4] <= one_bit_adder:add5.port3
+sum[5] <= one_bit_adder:add6.port3
+sum[6] <= one_bit_adder:add7.port3
+sum[7] <= one_bit_adder:add8.port3
+cout <= c:c207.port3
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add1
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add2
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c1
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c2
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add3
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c3
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c4
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c5
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add4
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c6
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c7
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c8
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c9
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add5
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c10
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c11
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c12
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c13
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c14
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add6
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c15
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c16
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c17
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c18
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c19
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c20
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add7
+a => xor1.IN0
+b => xor1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c201
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c202
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c203
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c204
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c205
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c206
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c207
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add8
 a => xor1.IN0
 b => xor1.IN1
 cin => xor2.IN1

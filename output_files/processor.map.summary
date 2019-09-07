@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri Sep 06 18:24:18 2019
+Analysis & Elaboration Status : Successful - Fri Sep 06 20:25:35 2019
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : processor
-Top-level Entity Name : eight_bit_look_ahead_adder
+Top-level Entity Name : full_adder
 Family : Cyclone IV E
-Total logic elements : 15
-    Total combinational functions : 15
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 26
-Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge

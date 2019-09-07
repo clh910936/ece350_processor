@@ -1,5 +1,5 @@
 EDA Netlist Writer report for processor
-Fri Sep 06 18:27:32 2019
+Fri Sep 06 20:28:15 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -8,9 +8,7 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. Simulation Settings
-  4. Simulation Generated Files
-  5. EDA Netlist Writer Messages
+  3. EDA Netlist Writer Messages
 
 
 
@@ -34,45 +32,14 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------+
-; EDA Netlist Writer Summary                                        ;
-+---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Sep 06 18:27:32 2019 ;
-; Revision Name             ; processor                             ;
-; Top-level Entity Name     ; eight_bit_look_ahead_adder            ;
-; Family                    ; Cyclone IV E                          ;
-; Simulation Files Creation ; Successful                            ;
-+---------------------------+---------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                           ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-; Option                                                                                            ; Setting                   ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate functional simulation netlist                                                            ; On                        ;
-; Truncate long hierarchy paths                                                                     ; Off                       ;
-; Map illegal HDL characters                                                                        ; Off                       ;
-; Flatten buses into individual nodes                                                               ; Off                       ;
-; Maintain hierarchy                                                                                ; Off                       ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
-; Enable glitch filtering                                                                           ; Off                       ;
-; Do not write top level VHDL entity                                                                ; Off                       ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
-; Architecture name in VHDL output netlist                                                          ; structure                 ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                        ;
-+---------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                   ;
-+---------------------------------------------------------------------------------------------------+
-; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/simulation/qsim//processor.vo ;
-+---------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------+
+; EDA Netlist Writer Summary                                    ;
++---------------------------+-----------------------------------+
+; EDA Netlist Writer Status ; Failed - Fri Sep 06 20:28:15 2019 ;
+; Revision Name             ; processor                         ;
+; Top-level Entity Name     ; eight_bit_look_ahead_adder        ;
+; Family                    ; Cyclone IV E                      ;
++---------------------------+-----------------------------------+
 
 
 +-----------------------------+
@@ -95,13 +62,223 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Fri Sep 06 18:27:31 2019
-Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory="C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/simulation/qsim/" processor -c processor
-Info (204019): Generated file processor.vo in folder "C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Fri Sep 06 18:27:32 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing started: Fri Sep 06 20:28:14 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off processor -c processor --vector_source="C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/waveforms/full_adder_tester.vwf" --testbench_file="C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/simulation/qsim/full_adder_tester.vwf.vt"
+Warning (20013): Ignored 24 assignments for entity "full_adder" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -section_id Top was ignored
+Error (201009): Bus port "a" specified in vector source file has width of 32, which does not match width 8 of top level port of same name
+Warning (201007): Can't find port "a[31]" in design
+Warning (201007): Can't find port "a[30]" in design
+Warning (201007): Can't find port "a[29]" in design
+Warning (201007): Can't find port "a[28]" in design
+Warning (201007): Can't find port "a[27]" in design
+Warning (201007): Can't find port "a[26]" in design
+Warning (201007): Can't find port "a[25]" in design
+Warning (201007): Can't find port "a[24]" in design
+Warning (201007): Can't find port "a[23]" in design
+Warning (201007): Can't find port "a[22]" in design
+Warning (201007): Can't find port "a[21]" in design
+Warning (201007): Can't find port "a[20]" in design
+Warning (201007): Can't find port "a[19]" in design
+Warning (201007): Can't find port "a[18]" in design
+Warning (201007): Can't find port "a[17]" in design
+Warning (201007): Can't find port "a[16]" in design
+Warning (201007): Can't find port "a[15]" in design
+Warning (201007): Can't find port "a[14]" in design
+Warning (201007): Can't find port "a[13]" in design
+Warning (201007): Can't find port "a[12]" in design
+Warning (201007): Can't find port "a[11]" in design
+Warning (201007): Can't find port "a[10]" in design
+Warning (201007): Can't find port "a[9]" in design
+Warning (201007): Can't find port "a[8]" in design
+Error (201009): Bus port "b" specified in vector source file has width of 32, which does not match width 8 of top level port of same name
+Warning (201007): Can't find port "b[31]" in design
+Warning (201007): Can't find port "b[30]" in design
+Warning (201007): Can't find port "b[29]" in design
+Warning (201007): Can't find port "b[28]" in design
+Warning (201007): Can't find port "b[27]" in design
+Warning (201007): Can't find port "b[26]" in design
+Warning (201007): Can't find port "b[25]" in design
+Warning (201007): Can't find port "b[24]" in design
+Warning (201007): Can't find port "b[23]" in design
+Warning (201007): Can't find port "b[22]" in design
+Warning (201007): Can't find port "b[21]" in design
+Warning (201007): Can't find port "b[20]" in design
+Warning (201007): Can't find port "b[19]" in design
+Warning (201007): Can't find port "b[18]" in design
+Warning (201007): Can't find port "b[17]" in design
+Warning (201007): Can't find port "b[16]" in design
+Warning (201007): Can't find port "b[15]" in design
+Warning (201007): Can't find port "b[14]" in design
+Warning (201007): Can't find port "b[13]" in design
+Warning (201007): Can't find port "b[12]" in design
+Warning (201007): Can't find port "b[11]" in design
+Warning (201007): Can't find port "b[10]" in design
+Warning (201007): Can't find port "b[9]" in design
+Warning (201007): Can't find port "b[8]" in design
+Error (201009): Bus port "a" specified in vector source file has width of 32, which does not match width 8 of top level port of same name
+Warning (201007): Can't find port "a[31]" in design
+Warning (201007): Can't find port "a[30]" in design
+Warning (201007): Can't find port "a[29]" in design
+Warning (201007): Can't find port "a[28]" in design
+Warning (201007): Can't find port "a[27]" in design
+Warning (201007): Can't find port "a[26]" in design
+Warning (201007): Can't find port "a[25]" in design
+Warning (201007): Can't find port "a[24]" in design
+Warning (201007): Can't find port "a[23]" in design
+Warning (201007): Can't find port "a[22]" in design
+Warning (201007): Can't find port "a[21]" in design
+Warning (201007): Can't find port "a[20]" in design
+Warning (201007): Can't find port "a[19]" in design
+Warning (201007): Can't find port "a[18]" in design
+Warning (201007): Can't find port "a[17]" in design
+Warning (201007): Can't find port "a[16]" in design
+Warning (201007): Can't find port "a[15]" in design
+Warning (201007): Can't find port "a[14]" in design
+Warning (201007): Can't find port "a[13]" in design
+Warning (201007): Can't find port "a[12]" in design
+Warning (201007): Can't find port "a[11]" in design
+Warning (201007): Can't find port "a[10]" in design
+Warning (201007): Can't find port "a[9]" in design
+Warning (201007): Can't find port "a[8]" in design
+Error (201009): Bus port "b" specified in vector source file has width of 32, which does not match width 8 of top level port of same name
+Warning (201007): Can't find port "b[31]" in design
+Warning (201007): Can't find port "b[30]" in design
+Warning (201007): Can't find port "b[29]" in design
+Warning (201007): Can't find port "b[28]" in design
+Warning (201007): Can't find port "b[27]" in design
+Warning (201007): Can't find port "b[26]" in design
+Warning (201007): Can't find port "b[25]" in design
+Warning (201007): Can't find port "b[24]" in design
+Warning (201007): Can't find port "b[23]" in design
+Warning (201007): Can't find port "b[22]" in design
+Warning (201007): Can't find port "b[21]" in design
+Warning (201007): Can't find port "b[20]" in design
+Warning (201007): Can't find port "b[19]" in design
+Warning (201007): Can't find port "b[18]" in design
+Warning (201007): Can't find port "b[17]" in design
+Warning (201007): Can't find port "b[16]" in design
+Warning (201007): Can't find port "b[15]" in design
+Warning (201007): Can't find port "b[14]" in design
+Warning (201007): Can't find port "b[13]" in design
+Warning (201007): Can't find port "b[12]" in design
+Warning (201007): Can't find port "b[11]" in design
+Warning (201007): Can't find port "b[10]" in design
+Warning (201007): Can't find port "b[9]" in design
+Warning (201007): Can't find port "b[8]" in design
+Error (201009): Bus port "a" specified in vector source file has width of 32, which does not match width 8 of top level port of same name
+Warning (201007): Can't find port "a[31]" in design
+Warning (201007): Can't find port "a[30]" in design
+Warning (201007): Can't find port "a[29]" in design
+Warning (201007): Can't find port "a[28]" in design
+Warning (201007): Can't find port "a[27]" in design
+Warning (201007): Can't find port "a[26]" in design
+Warning (201007): Can't find port "a[25]" in design
+Warning (201007): Can't find port "a[24]" in design
+Warning (201007): Can't find port "a[23]" in design
+Warning (201007): Can't find port "a[22]" in design
+Warning (201007): Can't find port "a[21]" in design
+Warning (201007): Can't find port "a[20]" in design
+Warning (201007): Can't find port "a[19]" in design
+Warning (201007): Can't find port "a[18]" in design
+Warning (201007): Can't find port "a[17]" in design
+Warning (201007): Can't find port "a[16]" in design
+Warning (201007): Can't find port "a[15]" in design
+Warning (201007): Can't find port "a[14]" in design
+Warning (201007): Can't find port "a[13]" in design
+Warning (201007): Can't find port "a[12]" in design
+Warning (201007): Can't find port "a[11]" in design
+Warning (201007): Can't find port "a[10]" in design
+Warning (201007): Can't find port "a[9]" in design
+Warning (201007): Can't find port "a[8]" in design
+Error (201009): Bus port "b" specified in vector source file has width of 32, which does not match width 8 of top level port of same name
+Warning (201007): Can't find port "b[31]" in design
+Warning (201007): Can't find port "b[30]" in design
+Warning (201007): Can't find port "b[29]" in design
+Warning (201007): Can't find port "b[28]" in design
+Warning (201007): Can't find port "b[27]" in design
+Warning (201007): Can't find port "b[26]" in design
+Warning (201007): Can't find port "b[25]" in design
+Warning (201007): Can't find port "b[24]" in design
+Warning (201007): Can't find port "b[23]" in design
+Warning (201007): Can't find port "b[22]" in design
+Warning (201007): Can't find port "b[21]" in design
+Warning (201007): Can't find port "b[20]" in design
+Warning (201007): Can't find port "b[19]" in design
+Warning (201007): Can't find port "b[18]" in design
+Warning (201007): Can't find port "b[17]" in design
+Warning (201007): Can't find port "b[16]" in design
+Warning (201007): Can't find port "b[15]" in design
+Warning (201007): Can't find port "b[14]" in design
+Warning (201007): Can't find port "b[13]" in design
+Warning (201007): Can't find port "b[12]" in design
+Warning (201007): Can't find port "b[11]" in design
+Warning (201007): Can't find port "b[10]" in design
+Warning (201007): Can't find port "b[9]" in design
+Warning (201007): Can't find port "b[8]" in design
+Warning (201007): Can't find port "c0" in design
+Warning (201005): Ignoring output pin "overflow" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[31]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[30]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[29]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[28]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[27]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[26]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[25]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[24]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[23]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[22]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[21]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[20]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[19]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[18]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[17]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[16]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[15]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[14]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[13]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[12]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[11]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[10]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[9]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[8]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[7]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[6]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[5]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[4]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[3]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[2]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[1]" in vector source file when writing test bench files
+Warning (201005): Ignoring output pin "sum[0]" in vector source file when writing test bench files
+Info (201000): Generated Verilog Test Bench File C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/simulation/qsim/full_adder_tester.vwf.vt for simulation
+Error: Quartus Prime EDA Netlist Writer was unsuccessful. 6 errors, 204 warnings
+    Error: Peak virtual memory: 4838 megabytes
+    Error: Processing ended: Fri Sep 06 20:28:15 2019
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:02
 
 
