@@ -78,9 +78,13 @@ TRANSITION_LIST("a")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 810.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 150.0;
+			LEVEL 0 FOR 810.0;
+		}
 	}
 }
 
@@ -89,9 +93,13 @@ TRANSITION_LIST("b")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 170.0;
-		LEVEL 0 FOR 750.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 170.0;
+			LEVEL 0 FOR 750.0;
+		}
 	}
 }
 
@@ -100,9 +108,13 @@ TRANSITION_LIST("cin")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 170.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 680.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 170.0;
+			LEVEL 1 FOR 150.0;
+			LEVEL 0 FOR 680.0;
+		}
 	}
 }
 
@@ -111,7 +123,17 @@ TRANSITION_LIST("sum")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 90.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 60.0;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 680.0;
+		}
 	}
 }
 

@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/06/2019 18:27:30"
+// Generated on "09/07/2019 14:30:47"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          eight_bit_look_ahead_adder
 // 
@@ -34,6 +34,13 @@ reg [7:0] a;
 reg [7:0] b;
 reg cin;
 // wires                                               
+wire c81;
+wire c82;
+wire c83;
+wire c84;
+wire c85;
+wire c86;
+wire c87;
 wire cout;
 wire [7:0] sum;
 
@@ -42,6 +49,13 @@ eight_bit_look_ahead_adder i1 (
 // port map - connection between master ports and signals/registers   
 	.a(a),
 	.b(b),
+	.c81(c81),
+	.c82(c82),
+	.c83(c83),
+	.c84(c84),
+	.c85(c85),
+	.c86(c86),
+	.c87(c87),
 	.cin(cin),
 	.cout(cout),
 	.sum(sum)
@@ -79,54 +93,62 @@ end
 initial
 begin
 	a[2] = 1'b0;
-	a[2] = #10000 1'b1;
-	a[2] = #40000 1'b0;
+	a[2] = #60000 1'b1;
+	a[2] = #180000 1'b0;
 end 
 // a[ 1 ]
 initial
 begin
 	a[1] = 1'b0;
-	a[1] = #10000 1'b1;
-	a[1] = #40000 1'b0;
 end 
 // a[ 0 ]
 initial
 begin
 	a[0] = 1'b0;
+	a[0] = #60000 1'b1;
+	a[0] = #180000 1'b0;
 end 
 // b[ 7 ]
 initial
 begin
 	b[7] = 1'b0;
+	b[7] = #130000 1'b1;
+	b[7] = #110000 1'b0;
 end 
 // b[ 6 ]
 initial
 begin
 	b[6] = 1'b0;
+	b[6] = #130000 1'b1;
+	b[6] = #110000 1'b0;
 end 
 // b[ 5 ]
 initial
 begin
 	b[5] = 1'b0;
+	b[5] = #130000 1'b1;
+	b[5] = #110000 1'b0;
 end 
 // b[ 4 ]
 initial
 begin
 	b[4] = 1'b0;
-	b[4] = #30000 1'b1;
-	b[4] = #40000 1'b0;
+	b[4] = #130000 1'b1;
+	b[4] = #110000 1'b0;
 end 
 // b[ 3 ]
 initial
 begin
 	b[3] = 1'b0;
+	b[3] = #130000 1'b1;
+	b[3] = #110000 1'b0;
 end 
 // b[ 2 ]
 initial
 begin
 	b[2] = 1'b0;
-	b[2] = #30000 1'b1;
-	b[2] = #40000 1'b0;
+	b[2] = #130000 1'b1;
+	b[2] = #110000 1'b0;
 end 
 // b[ 1 ]
 initial
@@ -137,14 +159,16 @@ end
 initial
 begin
 	b[0] = 1'b0;
+	b[0] = #130000 1'b1;
+	b[0] = #110000 1'b0;
 end 
 
 // cin
 initial
 begin
 	cin = 1'b0;
-	cin = #50000 1'b1;
-	cin = #40000 1'b0;
+	cin = #130000 1'b1;
+	cin = #110000 1'b0;
 end 
 endmodule
 

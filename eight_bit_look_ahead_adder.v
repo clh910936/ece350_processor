@@ -74,13 +74,15 @@ wire c83;
 wire c84;
 wire c85;
 wire c86;
+wire c87;
 c c201(a[0], b[0], cin, c81);
 c c202(a[1], b[1], c81, c82);
 c c203(a[2], b[2], c82, c83);
 c c204(a[3], b[3], c83, c84);
 c c205(a[4], b[4], c84, c85);
 c c206(a[5], b[5], c85, c86);
-c c207(a[6], b[6], c86, cout);
+c c207(a[6], b[6], c86, c87);
+c c208(a[7], b[7], c87, cout);
 one_bit_adder add8(a[7], b[7], c87, sum[7]);
 
 endmodule

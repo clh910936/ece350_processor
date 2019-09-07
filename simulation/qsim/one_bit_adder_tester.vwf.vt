@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/06/2019 17:59:41"
+// Generated on "09/07/2019 12:47:55"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          one_bit_adder
 // 
@@ -50,31 +50,27 @@ begin
 end 
 
 // a
-always
+initial
 begin
 	a = 1'b0;
-	a = #50000 1'b1;
-	#50000;
+	a = #40000 1'b1;
+	a = #150000 1'b0;
 end 
 
 // b
-always
+initial
 begin
 	b = 1'b0;
-	b = #100000 1'b1;
-	#100000;
+	b = #80000 1'b1;
+	b = #170000 1'b0;
 end 
 
 // cin
 initial
 begin
-	repeat(3)
-	begin
-		cin = 1'b0;
-		cin = #150000 1'b1;
-		# 150000;
-	end
 	cin = 1'b0;
+	cin = #170000 1'b1;
+	cin = #150000 1'b0;
 end 
 endmodule
 
