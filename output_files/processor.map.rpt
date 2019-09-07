@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor
-Sat Sep 07 15:01:22 2019
+Sat Sep 07 15:31:40 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -14,15 +14,21 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder4"
- 10. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder3"
- 11. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder2"
- 12. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder1"
- 13. Port Connectivity Checks: "c_8:cc24"
- 14. Port Connectivity Checks: "c_8:cc16"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "mux_8:opcodeMux|mux_2:second"
+ 10. Port Connectivity Checks: "mux_8:opcodeMux|mux_4:first_top|mux_2:second"
+ 11. Port Connectivity Checks: "mux_8:opcodeMux|mux_4:first_top|mux_2:first_bottom"
+ 12. Port Connectivity Checks: "mux_8:opcodeMux|mux_4:first_top|mux_2:first_top"
+ 13. Port Connectivity Checks: "mux_8:opcodeMux"
+ 14. Port Connectivity Checks: "full_adder:adder|eight_bit_look_ahead_adder:adder4"
+ 15. Port Connectivity Checks: "full_adder:adder|eight_bit_look_ahead_adder:adder3"
+ 16. Port Connectivity Checks: "full_adder:adder|eight_bit_look_ahead_adder:adder2"
+ 17. Port Connectivity Checks: "full_adder:adder|eight_bit_look_ahead_adder:adder1"
+ 18. Port Connectivity Checks: "full_adder:adder|c_8:cc24"
+ 19. Port Connectivity Checks: "full_adder:adder|c_8:cc16"
+ 20. Port Connectivity Checks: "full_adder:adder"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -49,16 +55,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 07 15:01:22 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sat Sep 07 15:31:40 2019       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; processor                                   ;
-; Top-level Entity Name              ; full_adder                                  ;
+; Top-level Entity Name              ; alu                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 70                                          ;
-;     Total combinational functions  ; 70                                          ;
+; Total logic elements               ; 33                                          ;
+;     Total combinational functions  ; 33                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 98                                          ;
+; Total pins                         ; 109                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -72,7 +78,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; full_adder         ; processor          ;
+; Top-level entity name                                                      ; alu                ; processor          ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -169,131 +175,98 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                     ; Library ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
+; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v                        ;         ;
 ; one_bit_adder.v                  ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/one_bit_adder.v              ;         ;
 ; eight_bit_look_ahead_adder.v     ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v ;         ;
 ; c.v                              ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c.v                          ;         ;
 ; c_8.v                            ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v                        ;         ;
 ; full_adder.v                     ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v                 ;         ;
 ; bitwise_invert.v                 ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/bitwise_invert.v             ;         ;
+; mux_2.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_2.v                      ;         ;
+; mux_4.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v                      ;         ;
+; mux_8.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_8.v                      ;         ;
+; and32.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/and32.v                      ;         ;
+; or32.v                           ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/or32.v                       ;         ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 70       ;
-;                                             ;          ;
-; Total combinational functions               ; 70       ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 68       ;
-;     -- 3 input functions                    ; 1        ;
-;     -- <=2 input functions                  ; 1        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 70       ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-;     -- Dedicated logic registers            ; 0        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 98       ;
-;                                             ;          ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; c0~input ;
-; Maximum fan-out                             ; 69       ;
-; Total fan-out                               ; 408      ;
-; Average fan-out                             ; 1.53     ;
-+---------------------------------------------+----------+
++-----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                           ;
++---------------------------------------------+-------------------------+
+; Resource                                    ; Usage                   ;
++---------------------------------------------+-------------------------+
+; Estimated Total logic elements              ; 33                      ;
+;                                             ;                         ;
+; Total combinational functions               ; 33                      ;
+; Logic element usage by number of LUT inputs ;                         ;
+;     -- 4 input functions                    ; 31                      ;
+;     -- 3 input functions                    ; 1                       ;
+;     -- <=2 input functions                  ; 1                       ;
+;                                             ;                         ;
+; Logic elements by mode                      ;                         ;
+;     -- normal mode                          ; 33                      ;
+;     -- arithmetic mode                      ; 0                       ;
+;                                             ;                         ;
+; Total registers                             ; 0                       ;
+;     -- Dedicated logic registers            ; 0                       ;
+;     -- I/O registers                        ; 0                       ;
+;                                             ;                         ;
+; I/O pins                                    ; 109                     ;
+;                                             ;                         ;
+; Embedded Multiplier 9-bit elements          ; 0                       ;
+;                                             ;                         ;
+; Maximum fan-out node                        ; ctrl_ALUopcode[0]~input ;
+; Maximum fan-out                             ; 32                      ;
+; Total fan-out                               ; 240                     ;
+; Average fan-out                             ; 0.96                    ;
++---------------------------------------------+-------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                               ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+----------------------------+--------------+
-; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Entity Name                ; Library Name ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+----------------------------+--------------+
-; |full_adder                            ; 70 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 98   ; 0            ; |full_adder                                                      ; full_adder                 ; work         ;
-;    |c_8:cc24|                          ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24                                             ; c_8                        ; work         ;
-;       |c:c21|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c21                                       ; c                          ; work         ;
-;       |c:c22|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c22                                       ; c                          ; work         ;
-;       |c:c23|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c23                                       ; c                          ; work         ;
-;       |c:c24|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c24                                       ; c                          ; work         ;
-;       |c:c25|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c25                                       ; c                          ; work         ;
-;       |c:c26|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c26                                       ; c                          ; work         ;
-;       |c:c27|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c27                                       ; c                          ; work         ;
-;       |c:c28|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c28                                       ; c                          ; work         ;
-;    |c_8:cc32|                          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc32                                             ; c_8                        ; work         ;
-;       |c:c28|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc32|c:c28                                       ; c                          ; work         ;
-;    |c_8:cc8|                           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc8                                              ; c_8                        ; work         ;
-;       |c:c28|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc8|c:c28                                        ; c                          ; work         ;
-;    |eight_bit_look_ahead_adder:adder1| ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1                    ; eight_bit_look_ahead_adder ; work         ;
-;       |c:c14|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c14              ; c                          ; work         ;
-;       |c:c207|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c207             ; c                          ; work         ;
-;       |c:c20|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c20              ; c                          ; work         ;
-;       |c:c2|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c2               ; c                          ; work         ;
-;       |c:c5|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c5               ; c                          ; work         ;
-;       |c:c9|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c9               ; c                          ; work         ;
-;       |c:c|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c                ; c                          ; work         ;
-;       |one_bit_adder:add1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add1 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add2 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add3 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add4 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add5 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add6 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add7 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add8|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add8 ; one_bit_adder              ; work         ;
-;    |eight_bit_look_ahead_adder:adder2| ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2                    ; eight_bit_look_ahead_adder ; work         ;
-;       |c:c14|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c14              ; c                          ; work         ;
-;       |c:c207|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c207             ; c                          ; work         ;
-;       |c:c20|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c20              ; c                          ; work         ;
-;       |c:c2|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c2               ; c                          ; work         ;
-;       |c:c5|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c5               ; c                          ; work         ;
-;       |c:c9|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c9               ; c                          ; work         ;
-;       |c:c|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c                ; c                          ; work         ;
-;       |one_bit_adder:add1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add1 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add2 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add3 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add4 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add5 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add6 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add7 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add8|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add8 ; one_bit_adder              ; work         ;
-;    |eight_bit_look_ahead_adder:adder3| ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3                    ; eight_bit_look_ahead_adder ; work         ;
-;       |c:c14|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c14              ; c                          ; work         ;
-;       |c:c207|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c207             ; c                          ; work         ;
-;       |c:c20|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c20              ; c                          ; work         ;
-;       |c:c2|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c2               ; c                          ; work         ;
-;       |c:c5|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c5               ; c                          ; work         ;
-;       |c:c9|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c9               ; c                          ; work         ;
-;       |c:c|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c                ; c                          ; work         ;
-;       |one_bit_adder:add1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add1 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add2 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add3 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add4 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add5 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add6 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add7 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add8|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add8 ; one_bit_adder              ; work         ;
-;    |eight_bit_look_ahead_adder:adder4| ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4                    ; eight_bit_look_ahead_adder ; work         ;
-;       |c:c14|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c14              ; c                          ; work         ;
-;       |c:c207|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c207             ; c                          ; work         ;
-;       |c:c20|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c20              ; c                          ; work         ;
-;       |c:c2|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c2               ; c                          ; work         ;
-;       |c:c5|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c5               ; c                          ; work         ;
-;       |c:c9|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c9               ; c                          ; work         ;
-;       |c:c|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c                ; c                          ; work         ;
-;       |one_bit_adder:add1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add1 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add2 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add3 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add4 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add5 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add6 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add7 ; one_bit_adder              ; work         ;
-;       |one_bit_adder:add8|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add8 ; one_bit_adder              ; work         ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+----------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                        ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
+; |alu                       ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |alu                                 ; alu         ; work         ;
+;    |full_adder:adder|      ; 31 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder                ; full_adder  ; work         ;
+;       |c_8:cc16|           ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc16       ; c_8         ; work         ;
+;          |c:c21|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc16|c:c21 ; c           ; work         ;
+;          |c:c22|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc16|c:c22 ; c           ; work         ;
+;          |c:c23|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc16|c:c23 ; c           ; work         ;
+;          |c:c24|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc16|c:c24 ; c           ; work         ;
+;          |c:c25|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc16|c:c25 ; c           ; work         ;
+;          |c:c26|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc16|c:c26 ; c           ; work         ;
+;          |c:c27|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc16|c:c27 ; c           ; work         ;
+;          |c:c28|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc16|c:c28 ; c           ; work         ;
+;       |c_8:cc24|           ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc24       ; c_8         ; work         ;
+;          |c:c21|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc24|c:c21 ; c           ; work         ;
+;          |c:c22|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc24|c:c22 ; c           ; work         ;
+;          |c:c23|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc24|c:c23 ; c           ; work         ;
+;          |c:c24|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc24|c:c24 ; c           ; work         ;
+;          |c:c25|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc24|c:c25 ; c           ; work         ;
+;          |c:c26|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc24|c:c26 ; c           ; work         ;
+;          |c:c27|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc24|c:c27 ; c           ; work         ;
+;          |c:c28|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc24|c:c28 ; c           ; work         ;
+;       |c_8:cc32|           ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc32       ; c_8         ; work         ;
+;          |c:c21|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc32|c:c21 ; c           ; work         ;
+;          |c:c22|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc32|c:c22 ; c           ; work         ;
+;          |c:c23|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc32|c:c23 ; c           ; work         ;
+;          |c:c24|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc32|c:c24 ; c           ; work         ;
+;          |c:c25|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc32|c:c25 ; c           ; work         ;
+;          |c:c26|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc32|c:c26 ; c           ; work         ;
+;          |c:c27|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc32|c:c27 ; c           ; work         ;
+;          |c:c28|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc32|c:c28 ; c           ; work         ;
+;       |c_8:cc8|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc8        ; c_8         ; work         ;
+;          |c:c21|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc8|c:c21  ; c           ; work         ;
+;          |c:c22|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc8|c:c22  ; c           ; work         ;
+;          |c:c23|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc8|c:c23  ; c           ; work         ;
+;          |c:c24|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc8|c:c24  ; c           ; work         ;
+;          |c:c25|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc8|c:c25  ; c           ; work         ;
+;          |c:c26|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc8|c:c26  ; c           ; work         ;
+;          |c:c27|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|full_adder:adder|c_8:cc8|c:c27  ; c           ; work         ;
+;    |mux_8:opcodeMux|       ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux_8:opcodeMux                 ; mux_8       ; work         ;
+;       |mux_2:second|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux_8:opcodeMux|mux_2:second    ; mux_2       ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -312,8 +285,58 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8:opcodeMux|mux_2:second"                                                                                                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (32 bits) it drives.  The 31 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8:opcodeMux|mux_4:first_top|mux_2:second"                                                                                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (32 bits) it drives.  The 31 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8:opcodeMux|mux_4:first_top|mux_2:first_bottom"                                                                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (32 bits) it drives.  The 31 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8:opcodeMux|mux_4:first_top|mux_2:first_top"                                                                                                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (32 bits) it drives.  The 31 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8:opcodeMux"                                                                                                                             ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                       ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; in0  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in0[31..1]" will be connected to GND. ;
+; in1  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in1[31..1]" will be connected to GND. ;
+; in4  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in4[31..1]" will be connected to GND. ;
+; in5  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in5[31..1]" will be connected to GND. ;
+; in6  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in6[31..1]" will be connected to GND. ;
+; in7  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "in7[31..1]" will be connected to GND. ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "eight_bit_look_ahead_adder:adder4"                                                                       ;
+; Port Connectivity Checks: "full_adder:adder|eight_bit_look_ahead_adder:adder4"                                                      ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                  ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -322,7 +345,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "eight_bit_look_ahead_adder:adder3"                                                                       ;
+; Port Connectivity Checks: "full_adder:adder|eight_bit_look_ahead_adder:adder3"                                                      ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                  ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -331,7 +354,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "eight_bit_look_ahead_adder:adder2"                                                                       ;
+; Port Connectivity Checks: "full_adder:adder|eight_bit_look_ahead_adder:adder2"                                                      ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                  ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -340,7 +363,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "eight_bit_look_ahead_adder:adder1"                                                                       ;
+; Port Connectivity Checks: "full_adder:adder|eight_bit_look_ahead_adder:adder1"                                                      ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                  ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -349,7 +372,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "c_8:cc24"                                                                                                                                                                       ;
+; Port Connectivity Checks: "full_adder:adder|c_8:cc24"                                                                                                                                                      ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -359,13 +382,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "c_8:cc16"                                                                                                                                                                       ;
+; Port Connectivity Checks: "full_adder:adder|c_8:cc16"                                                                                                                                                      ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; a    ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (8 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; b    ; Input ; Warning  ; Input port expression (9 bits) is wider than the input port (8 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "full_adder:adder"                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -373,15 +405,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 98                          ;
-; cycloneiii_lcell_comb ; 70                          ;
-;     normal            ; 70                          ;
+; boundary_port         ; 109                         ;
+; cycloneiii_lcell_comb ; 34                          ;
+;     normal            ; 34                          ;
+;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 1                           ;
-;         4 data inputs ; 68                          ;
+;         4 data inputs ; 31                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 31.00                       ;
-; Average LUT depth     ; 19.70                       ;
+; Average LUT depth     ; 20.11                       ;
 +-----------------------+-----------------------------+
 
 
@@ -400,7 +433,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sat Sep 07 15:00:56 2019
+    Info: Processing started: Sat Sep 07 15:31:15 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
@@ -423,25 +456,282 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux_4.v
     Info (12023): Found entity 1: mux_4 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_8.v
     Info (12023): Found entity 1: mux_8 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_8.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at alu.v(12): created implicit net for "addersum" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 12
-Info (12127): Elaborating entity "full_adder" for the top level hierarchy
-Info (12128): Elaborating entity "bitwise_invert" for hierarchy "bitwise_invert:invert" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 19
-Info (12128): Elaborating entity "c_8" for hierarchy "c_8:cc8" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 22
-Info (12128): Elaborating entity "c" for hierarchy "c_8:cc8|c:c21" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v Line: 14
-Info (12128): Elaborating entity "eight_bit_look_ahead_adder" for hierarchy "eight_bit_look_ahead_adder:adder1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 27
-Info (12128): Elaborating entity "one_bit_adder" for hierarchy "eight_bit_look_ahead_adder:adder1|one_bit_adder:add1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v Line: 8
-Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12021): Found 1 design units, including 1 entities, in source file and32.v
+    Info (12023): Found entity 1: and32 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/and32.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or32.v
+    Info (12023): Found entity 1: or32 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/or32.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at alu.v(16): created implicit net for "addersum" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+Info (12127): Elaborating entity "alu" for the top level hierarchy
+Warning (10034): Output port "isNotEqual" at alu.v(6) has no driver File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 6
+Warning (10034): Output port "isLessThan" at alu.v(6) has no driver File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 6
+Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:adder" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 12
+Info (12128): Elaborating entity "bitwise_invert" for hierarchy "full_adder:adder|bitwise_invert:invert" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 19
+Info (12128): Elaborating entity "c_8" for hierarchy "full_adder:adder|c_8:cc8" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 22
+Info (12128): Elaborating entity "c" for hierarchy "full_adder:adder|c_8:cc8|c:c21" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v Line: 14
+Info (12128): Elaborating entity "eight_bit_look_ahead_adder" for hierarchy "full_adder:adder|eight_bit_look_ahead_adder:adder1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 27
+Info (12128): Elaborating entity "one_bit_adder" for hierarchy "full_adder:adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v Line: 8
+Info (12128): Elaborating entity "and32" for hierarchy "and32:and32_1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 13
+Info (12128): Elaborating entity "or32" for hierarchy "or32:or32_1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 14
+Info (12128): Elaborating entity "mux_8" for hierarchy "mux_8:opcodeMux" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+Info (12128): Elaborating entity "mux_4" for hierarchy "mux_8:opcodeMux|mux_4:first_top" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_8.v Line: 8
+Info (12128): Elaborating entity "mux_2" for hierarchy "mux_8:opcodeMux|mux_4:first_top|mux_2:first_top" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 6
+Warning (10230): Verilog HDL assignment warning at mux_2.v(4): truncated value with size 32 to match size of target (1) File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_2.v Line: 4
+Warning (12030): Port "out" on the entity instantiation of "second" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 8
+Warning (12030): Port "out" on the entity instantiation of "first_bottom" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 7
+Warning (12030): Port "out" on the entity instantiation of "first_top" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 6
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+Warning (12241): 11 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "data_result[1]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[2]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[3]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[4]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[5]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[6]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[7]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[8]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[9]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[10]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[11]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[12]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[13]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[14]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[15]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[16]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[17]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[18]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[19]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[20]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[21]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[22]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[23]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[24]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[25]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[26]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[27]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[28]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[29]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[30]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "data_result[31]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
+    Warning (13410): Pin "isNotEqual" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 6
+    Warning (13410): Pin "isLessThan" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 168 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 65 input pins
-    Info (21059): Implemented 33 output pins
-    Info (21061): Implemented 70 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4957 megabytes
-    Info: Processing ended: Sat Sep 07 15:01:22 2019
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:48
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "data_operandA[23]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 3
+    Warning (15610): No output dependent on input pin "data_operandB[23]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 3
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_shiftamt[0]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_shiftamt[1]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_shiftamt[2]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_shiftamt[3]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_shiftamt[4]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
+Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 74 input pins
+    Info (21059): Implemented 35 output pins
+    Info (21061): Implemented 33 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 250 warnings
+    Info: Peak virtual memory: 4959 megabytes
+    Info: Processing ended: Sat Sep 07 15:31:40 2019
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:52
 
 

@@ -168,3 +168,43 @@ r1
 !s90 -work|work|one_bit_adder_tester.vwf.vt|
 !i113 1
 R8
+vor32
+Z14 !s110 1567884594
+!i10b 1
+!s100 e8Jab:gTfnUA=U;UGkoOd0
+IcF_GcgLBbOeLAONA@dN=e1
+R1
+R0
+w1567884592
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+!s108 1567884593.000000
+R6
+R7
+!i113 1
+R8
+vor32_vlg_vec_tst
+R14
+!i10b 1
+!s100 J@SlF7V6OeULYZz6mH^O:0
+I1zJ4zGko7CY>IXeXW?cV@3
+R1
+R0
+w1567884591
+8or32_tester.vwf.vt
+For32_tester.vwf.vt
+R9
+R5
+r1
+!s85 0
+31
+!s108 1567884594.000000
+!s107 or32_tester.vwf.vt|
+!s90 -work|work|or32_tester.vwf.vt|
+!i113 1
+R8
