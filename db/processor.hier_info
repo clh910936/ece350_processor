@@ -546,7 +546,7 @@ a[3] => a[3].IN5
 a[4] => a[4].IN4
 a[5] => a[5].IN3
 a[6] => a[6].IN2
-a[7] => a[7].IN1
+a[7] => a[7].IN2
 b[0] => b[0].IN8
 b[1] => b[1].IN7
 b[2] => b[2].IN6
@@ -554,7 +554,7 @@ b[3] => b[3].IN5
 b[4] => b[4].IN4
 b[5] => b[5].IN3
 b[6] => b[6].IN2
-b[7] => b[7].IN1
+b[7] => b[7].IN2
 cin => cin.IN8
 sum[0] <= one_bit_adder:add1.port3
 sum[1] <= one_bit_adder:add2.port3
@@ -564,7 +564,7 @@ sum[4] <= one_bit_adder:add5.port3
 sum[5] <= one_bit_adder:add6.port3
 sum[6] <= one_bit_adder:add7.port3
 sum[7] <= one_bit_adder:add8.port3
-cout <= c:c207.port3
+cout <= c:c208.port3
 
 
 |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add1
@@ -868,6 +868,15 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|full_adder|eight_bit_look_ahead_adder:adder1|c:c208
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add8
 a => xor1.IN0
 b => xor1.IN1
@@ -883,7 +892,7 @@ a[3] => a[3].IN5
 a[4] => a[4].IN4
 a[5] => a[5].IN3
 a[6] => a[6].IN2
-a[7] => a[7].IN1
+a[7] => a[7].IN2
 b[0] => b[0].IN8
 b[1] => b[1].IN7
 b[2] => b[2].IN6
@@ -891,7 +900,7 @@ b[3] => b[3].IN5
 b[4] => b[4].IN4
 b[5] => b[5].IN3
 b[6] => b[6].IN2
-b[7] => b[7].IN1
+b[7] => b[7].IN2
 cin => cin.IN8
 sum[0] <= one_bit_adder:add1.port3
 sum[1] <= one_bit_adder:add2.port3
@@ -901,7 +910,7 @@ sum[4] <= one_bit_adder:add5.port3
 sum[5] <= one_bit_adder:add6.port3
 sum[6] <= one_bit_adder:add7.port3
 sum[7] <= one_bit_adder:add8.port3
-cout <= c:c207.port3
+cout <= c:c208.port3
 
 
 |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add1
@@ -1205,6 +1214,15 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|full_adder|eight_bit_look_ahead_adder:adder2|c:c208
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add8
 a => xor1.IN0
 b => xor1.IN1
@@ -1220,7 +1238,7 @@ a[3] => a[3].IN5
 a[4] => a[4].IN4
 a[5] => a[5].IN3
 a[6] => a[6].IN2
-a[7] => a[7].IN1
+a[7] => a[7].IN2
 b[0] => b[0].IN8
 b[1] => b[1].IN7
 b[2] => b[2].IN6
@@ -1228,7 +1246,7 @@ b[3] => b[3].IN5
 b[4] => b[4].IN4
 b[5] => b[5].IN3
 b[6] => b[6].IN2
-b[7] => b[7].IN1
+b[7] => b[7].IN2
 cin => cin.IN8
 sum[0] <= one_bit_adder:add1.port3
 sum[1] <= one_bit_adder:add2.port3
@@ -1238,7 +1256,7 @@ sum[4] <= one_bit_adder:add5.port3
 sum[5] <= one_bit_adder:add6.port3
 sum[6] <= one_bit_adder:add7.port3
 sum[7] <= one_bit_adder:add8.port3
-cout <= c:c207.port3
+cout <= c:c208.port3
 
 
 |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add1
@@ -1542,6 +1560,15 @@ c0 => and1.IN1
 c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|full_adder|eight_bit_look_ahead_adder:adder3|c:c208
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add8
 a => xor1.IN0
 b => xor1.IN1
@@ -1557,7 +1584,7 @@ a[3] => a[3].IN5
 a[4] => a[4].IN4
 a[5] => a[5].IN3
 a[6] => a[6].IN2
-a[7] => a[7].IN1
+a[7] => a[7].IN2
 b[0] => b[0].IN8
 b[1] => b[1].IN7
 b[2] => b[2].IN6
@@ -1565,7 +1592,7 @@ b[3] => b[3].IN5
 b[4] => b[4].IN4
 b[5] => b[5].IN3
 b[6] => b[6].IN2
-b[7] => b[7].IN1
+b[7] => b[7].IN2
 cin => cin.IN8
 sum[0] <= one_bit_adder:add1.port3
 sum[1] <= one_bit_adder:add2.port3
@@ -1575,7 +1602,7 @@ sum[4] <= one_bit_adder:add5.port3
 sum[5] <= one_bit_adder:add6.port3
 sum[6] <= one_bit_adder:add7.port3
 sum[7] <= one_bit_adder:add8.port3
-cout <= c:c207.port3
+cout <= c:c208.port3
 
 
 |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add1
@@ -1871,6 +1898,15 @@ c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |full_adder|eight_bit_look_ahead_adder:adder4|c:c207
+a => andG.IN0
+a => orP.IN0
+b => andG.IN1
+b => orP.IN1
+c0 => and1.IN1
+c1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|eight_bit_look_ahead_adder:adder4|c:c208
 a => andG.IN0
 a => orP.IN0
 b => andG.IN1

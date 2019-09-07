@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/07/2019 11:55:21"
+// Generated on "09/07/2019 14:36:11"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          full_adder
 // 
@@ -34,8 +34,6 @@ reg [31:0] a;
 reg [31:0] bOriginal;
 reg c0;
 // wires                                               
-wire [31:0] b;
-wire c8;
 wire overflow;
 wire [31:0] sum;
 
@@ -43,10 +41,8 @@ wire [31:0] sum;
 full_adder i1 (
 // port map - connection between master ports and signals/registers   
 	.a(a),
-	.b(b),
 	.bOriginal(bOriginal),
 	.c0(c0),
-	.c8(c8),
 	.overflow(overflow),
 	.sum(sum)
 );
@@ -188,35 +184,49 @@ end
 initial
 begin
 	a[5] = 1'b0;
+	a[5] = #50000 1'b1;
+	a[5] = #100000 1'b0;
 end 
 // a[ 4 ]
 initial
 begin
 	a[4] = 1'b0;
+	a[4] = #50000 1'b1;
+	a[4] = #100000 1'b0;
 end 
 // a[ 3 ]
 initial
 begin
 	a[3] = 1'b0;
-	a[3] = #30000 1'b1;
-	a[3] = #110000 1'b0;
+	a[3] = #210000 1'b1;
+	a[3] = #60000 1'b0;
 end 
 // a[ 2 ]
 initial
 begin
 	a[2] = 1'b0;
+	a[2] = #50000 1'b1;
+	a[2] = #100000 1'b0;
+	a[2] = #60000 1'b1;
+	a[2] = #60000 1'b0;
 end 
 // a[ 1 ]
 initial
 begin
 	a[1] = 1'b0;
-	a[1] = #30000 1'b1;
-	a[1] = #110000 1'b0;
+	a[1] = #50000 1'b1;
+	a[1] = #100000 1'b0;
+	a[1] = #60000 1'b1;
+	a[1] = #60000 1'b0;
 end 
 // a[ 0 ]
 initial
 begin
 	a[0] = 1'b0;
+	a[0] = #50000 1'b1;
+	a[0] = #100000 1'b0;
+	a[0] = #60000 1'b1;
+	a[0] = #60000 1'b0;
 end 
 // bOriginal[ 31 ]
 initial
@@ -357,38 +367,44 @@ end
 initial
 begin
 	bOriginal[4] = 1'b0;
+	bOriginal[4] = #150000 1'b1;
+	bOriginal[4] = #70000 1'b0;
 end 
 // bOriginal[ 3 ]
 initial
 begin
 	bOriginal[3] = 1'b0;
+	bOriginal[3] = #80000 1'b1;
+	bOriginal[3] = #140000 1'b0;
 end 
 // bOriginal[ 2 ]
 initial
 begin
 	bOriginal[2] = 1'b0;
+	bOriginal[2] = #80000 1'b1;
+	bOriginal[2] = #140000 1'b0;
 end 
 // bOriginal[ 1 ]
 initial
 begin
 	bOriginal[1] = 1'b0;
-	bOriginal[1] = #90000 1'b1;
-	bOriginal[1] = #50000 1'b0;
+	bOriginal[1] = #80000 1'b1;
+	bOriginal[1] = #140000 1'b0;
 end 
 // bOriginal[ 0 ]
 initial
 begin
 	bOriginal[0] = 1'b0;
-	bOriginal[0] = #90000 1'b1;
-	bOriginal[0] = #50000 1'b0;
+	bOriginal[0] = #80000 1'b1;
+	bOriginal[0] = #70000 1'b0;
 end 
 
 // c0
 initial
 begin
 	c0 = 1'b0;
-	c0 = #120000 1'b1;
-	c0 = #20000 1'b0;
+	c0 = #130000 1'b1;
+	c0 = #60000 1'b0;
 end 
 endmodule
 

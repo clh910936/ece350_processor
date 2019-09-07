@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Sep 07 12:02:37 2019
+Analysis & Synthesis Status : Successful - Sat Sep 07 14:34:06 2019
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : processor
 Top-level Entity Name : full_adder
 Family : Cyclone IV E
-Total logic elements : 69
-    Total combinational functions : 69
+Total logic elements : 70
+    Total combinational functions : 70
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 98
