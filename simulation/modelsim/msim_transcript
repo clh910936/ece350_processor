@@ -1,0 +1,63 @@
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do processor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/carri/Documents/College/Semester\ 5/ECE350/ece350_processor {C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/one_bit_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 09:43:22 on Sep 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor" C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/one_bit_adder.v 
+# -- Compiling module one_bit_adder
+# 
+# Top level modules:
+# 	one_bit_adder
+# End time: 09:43:22 on Sep 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/carri/Documents/College/Semester\ 5/ECE350/ece350_processor {C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 09:43:22 on Sep 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor" C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v 
+# -- Compiling module eight_bit_look_ahead_adder
+# 
+# Top level modules:
+# 	eight_bit_look_ahead_adder
+# End time: 09:43:23 on Sep 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/carri/Documents/College/Semester\ 5/ECE350/ece350_processor {C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 09:43:23 on Sep 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor" C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c.v 
+# -- Compiling module c
+# 
+# Top level modules:
+# 	c
+# End time: 09:43:23 on Sep 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/carri/Documents/College/Semester\ 5/ECE350/ece350_processor {C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 09:43:23 on Sep 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor" C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v 
+# -- Compiling module c_8
+# 
+# Top level modules:
+# 	c_8
+# End time: 09:43:23 on Sep 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/carri/Documents/College/Semester\ 5/ECE350/ece350_processor {C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 09:43:23 on Sep 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor" C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 09:43:23 on Sep 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

@@ -1,0 +1,8 @@
+module bitwise_invert(a, out);
+input [31:0] a;
+output [31:0] out;
+
+not not0(a[0], out[0]);
+
+
+endmodule

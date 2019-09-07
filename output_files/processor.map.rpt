@@ -1,5 +1,5 @@
-Analysis & Elaboration report for processor
-Fri Sep 06 20:25:35 2019
+Analysis & Synthesis report for processor
+Sat Sep 07 12:02:38 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -7,16 +7,22 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder4"
-  6. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder3"
-  7. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder2"
-  8. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder1"
-  9. Port Connectivity Checks: "c_8:cc24"
- 10. Port Connectivity Checks: "c_8:cc16"
- 11. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder4"
+ 10. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder3"
+ 11. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder2"
+ 12. Port Connectivity Checks: "eight_bit_look_ahead_adder:adder1"
+ 13. Port Connectivity Checks: "c_8:cc24"
+ 14. Port Connectivity Checks: "c_8:cc16"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -41,38 +47,27 @@ agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                   ;
+; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Fri Sep 06 20:25:35 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sat Sep 07 12:02:37 2019       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; processor                                   ;
 ; Top-level Entity Name              ; full_adder                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 69                                          ;
+;     Total combinational functions  ; 69                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 98                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                      ;
+; Analysis & Synthesis Settings                                                                                        ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
@@ -158,6 +153,165 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
+; one_bit_adder.v                  ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/one_bit_adder.v              ;         ;
+; eight_bit_look_ahead_adder.v     ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v ;         ;
+; c.v                              ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c.v                          ;         ;
+; c_8.v                            ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v                        ;         ;
+; full_adder.v                     ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v                 ;         ;
+; bitwise_invert.v                 ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/bitwise_invert.v             ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 69       ;
+;                                             ;          ;
+; Total combinational functions               ; 69       ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 63       ;
+;     -- 3 input functions                    ; 5        ;
+;     -- <=2 input functions                  ; 1        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 69       ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 98       ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; c0~input ;
+; Maximum fan-out                             ; 68       ;
+; Total fan-out                               ; 400      ;
+; Average fan-out                             ; 1.51     ;
++---------------------------------------------+----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                               ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+----------------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Entity Name                ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+----------------------------+--------------+
+; |full_adder                            ; 69 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 98   ; 0            ; |full_adder                                                      ; full_adder                 ; work         ;
+;    |c_8:cc16|                          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc16                                             ; c_8                        ; work         ;
+;       |c:c28|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc16|c:c28                                       ; c                          ; work         ;
+;    |c_8:cc24|                          ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24                                             ; c_8                        ; work         ;
+;       |c:c21|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c21                                       ; c                          ; work         ;
+;       |c:c22|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c22                                       ; c                          ; work         ;
+;       |c:c23|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c23                                       ; c                          ; work         ;
+;       |c:c24|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c24                                       ; c                          ; work         ;
+;       |c:c25|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c25                                       ; c                          ; work         ;
+;       |c:c26|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c26                                       ; c                          ; work         ;
+;       |c:c27|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c27                                       ; c                          ; work         ;
+;       |c:c28|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc24|c:c28                                       ; c                          ; work         ;
+;    |c_8:cc32|                          ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc32                                             ; c_8                        ; work         ;
+;       |c:c27|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc32|c:c27                                       ; c                          ; work         ;
+;       |c:c28|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc32|c:c28                                       ; c                          ; work         ;
+;    |c_8:cc8|                           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc8                                              ; c_8                        ; work         ;
+;       |c:c27|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc8|c:c27                                        ; c                          ; work         ;
+;       |c:c28|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|c_8:cc8|c:c28                                        ; c                          ; work         ;
+;    |eight_bit_look_ahead_adder:adder1| ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1                    ; eight_bit_look_ahead_adder ; work         ;
+;       |c:c14|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c14              ; c                          ; work         ;
+;       |c:c20|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c20              ; c                          ; work         ;
+;       |c:c2|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c2               ; c                          ; work         ;
+;       |c:c5|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c5               ; c                          ; work         ;
+;       |c:c9|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c9               ; c                          ; work         ;
+;       |c:c|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|c:c                ; c                          ; work         ;
+;       |one_bit_adder:add1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add1 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add2 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add3 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add4 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add5 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add6 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add7 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add8|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add8 ; one_bit_adder              ; work         ;
+;    |eight_bit_look_ahead_adder:adder2| ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2                    ; eight_bit_look_ahead_adder ; work         ;
+;       |c:c14|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c14              ; c                          ; work         ;
+;       |c:c20|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c20              ; c                          ; work         ;
+;       |c:c2|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c2               ; c                          ; work         ;
+;       |c:c5|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c5               ; c                          ; work         ;
+;       |c:c9|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c9               ; c                          ; work         ;
+;       |c:c|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|c:c                ; c                          ; work         ;
+;       |one_bit_adder:add1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add1 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add2 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add3 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add4 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add5 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add6 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add7 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add8|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder2|one_bit_adder:add8 ; one_bit_adder              ; work         ;
+;    |eight_bit_look_ahead_adder:adder3| ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3                    ; eight_bit_look_ahead_adder ; work         ;
+;       |c:c14|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c14              ; c                          ; work         ;
+;       |c:c20|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c20              ; c                          ; work         ;
+;       |c:c2|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c2               ; c                          ; work         ;
+;       |c:c5|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c5               ; c                          ; work         ;
+;       |c:c9|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c9               ; c                          ; work         ;
+;       |c:c|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|c:c                ; c                          ; work         ;
+;       |one_bit_adder:add1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add1 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add2 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add3 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add4 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add5 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add6 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add7 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add8|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder3|one_bit_adder:add8 ; one_bit_adder              ; work         ;
+;    |eight_bit_look_ahead_adder:adder4| ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4                    ; eight_bit_look_ahead_adder ; work         ;
+;       |c:c14|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c14              ; c                          ; work         ;
+;       |c:c20|                          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c20              ; c                          ; work         ;
+;       |c:c2|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c2               ; c                          ; work         ;
+;       |c:c5|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c5               ; c                          ; work         ;
+;       |c:c9|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c9               ; c                          ; work         ;
+;       |c:c|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|c:c                ; c                          ; work         ;
+;       |one_bit_adder:add1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add1 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add2 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add3|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add3 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add4 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add5 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add6|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add6 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add7 ; one_bit_adder              ; work         ;
+;       |one_bit_adder:add8|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |full_adder|eight_bit_look_ahead_adder:adder4|one_bit_adder:add8 ; one_bit_adder              ; work         ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+----------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "eight_bit_look_ahead_adder:adder4"                                                                       ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -214,14 +368,40 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 98                          ;
+; cycloneiii_lcell_comb ; 69                          ;
+;     normal            ; 69                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 63                          ;
+;                       ;                             ;
+; Max LUT depth         ; 31.00                       ;
+; Average LUT depth     ; 19.07                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Fri Sep 06 20:25:11 2019
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor --analysis_and_elaboration
+    Info: Processing started: Sat Sep 07 12:02:06 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
     Info (12023): Found entity 1: alu File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 1
@@ -235,17 +415,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file c_8.v
     Info (12023): Found entity 1: c_8 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
     Info (12023): Found entity 1: full_adder File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file bitwise_invert.v
+    Info (12023): Found entity 1: bitwise_invert File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/bitwise_invert.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at eight_bit_look_ahead_adder.v(84): created implicit net for "c87" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v Line: 84
 Info (12127): Elaborating entity "full_adder" for the top level hierarchy
-Info (12128): Elaborating entity "c_8" for hierarchy "c_8:cc8" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 15
+Info (12128): Elaborating entity "bitwise_invert" for hierarchy "bitwise_invert:invert" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 19
+Info (12128): Elaborating entity "c_8" for hierarchy "c_8:cc8" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 22
 Info (12128): Elaborating entity "c" for hierarchy "c_8:cc8|c:c21" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v Line: 14
-Info (12128): Elaborating entity "eight_bit_look_ahead_adder" for hierarchy "eight_bit_look_ahead_adder:adder1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 20
+Info (12128): Elaborating entity "eight_bit_look_ahead_adder" for hierarchy "eight_bit_look_ahead_adder:adder1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 27
 Info (12128): Elaborating entity "one_bit_adder" for hierarchy "eight_bit_look_ahead_adder:adder1|one_bit_adder:add1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v Line: 8
 Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4927 megabytes
-    Info: Processing ended: Fri Sep 06 20:25:35 2019
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:01:00
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 167 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 65 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 69 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4957 megabytes
+    Info: Processing ended: Sat Sep 07 12:02:38 2019
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:59
 
 

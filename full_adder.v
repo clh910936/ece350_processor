@@ -3,14 +3,21 @@
 //c0=0 is add, c0=1 is subtract
 //sum is a 32 bit result of adding/aubtracting a and b
 //overflow is a 1 bit cout
-module full_adder(a, b, c0, sum, overflow);
-input [31:0] a, b;
+module full_adder(a, bOriginal, c0, sum, overflow);
+input [31:0] a, bOriginal;
 input c0;
 output [31:0] sum;
 output overflow;
+wire [31:0] bnot;
+wire [31:0] b;
 wire c8;
 wire c16;
 wire c24;
+
+//assign b
+//ie add or subtract
+bitwise_invert invert(bOriginal, bnot);
+assign b = c0 ? bnot : bOriginal;
 
 c_8 cc8(a[7:0], b[7:0], c0, c8);
 c_8 cc16(a[15:7], b[15:7], c8, c16);

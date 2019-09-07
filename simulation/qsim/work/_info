@@ -8,83 +8,163 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/simulation/qsim
-veight_bit_look_ahead_adder
-Z1 !s110 1567808853
+vbitwise_invert
+!s110 1567866729
 !i10b 1
-!s100 8]ObBTAOcf4TRITLkmO_X0
-IofV_oUT=KdNZ;ENOz^9PW3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 YNgPD9l9i6bdcU@]j]DM72
+I=P[9hDIS8^<Fh<8li>BDI0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1567808852
-Z3 8processor.vo
-Z4 Fprocessor.vo
-Z5 L0 32
-Z6 OV;L;10.4d;61
+w1567866728
+Z2 8processor.vo
+Z3 Fprocessor.vo
+Z4 L0 32
+Z5 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z7 !s108 1567808853.000000
-Z8 !s107 processor.vo|
-Z9 !s90 -work|work|processor.vo|
+!s108 1567866729.000000
+Z6 !s107 processor.vo|
+Z7 !s90 -work|work|processor.vo|
 !i113 1
-Z10 o-work work
-veight_bit_look_ahead_adder_vlg_vec_tst
+Z8 o-work work
+vbitwise_invert_vlg_vec_tst
+!s110 1567866730
+!i10b 1
+!s100 IW<VT>L1jP0ai`C_WKULE3
+I1L>m]N;o]?1LJ6ADA2kU63
 R1
+R0
+w1567866726
+8bitwise_invert_tester.vwf.vt
+Fbitwise_invert_tester.vwf.vt
+Z9 L0 30
+R5
+r1
+!s85 0
+31
+!s108 1567866730.000000
+!s107 bitwise_invert_tester.vwf.vt|
+!s90 -work|work|bitwise_invert_tester.vwf.vt|
+!i113 1
+R8
+veight_bit_look_ahead_adder
+Z10 !s110 1567808853
+!i10b 1
+!s100 8]ObBTAOcf4TRITLkmO_X0
+IofV_oUT=KdNZ;ENOz^9PW3
+R1
+R0
+w1567808852
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1567808853.000000
+R6
+R7
+!i113 1
+R8
+veight_bit_look_ahead_adder_vlg_vec_tst
+R10
 !i10b 1
 !s100 ZmzjYaRK5J0kYo1]d`hdI2
 Iz=j5d;IXbA5h=UAGLc]aE0
-R2
+R1
 R0
 w1567808850
 8eight_bit_adder_tester.vwf.vt
 Feight_bit_adder_tester.vwf.vt
-Z11 L0 30
-R6
+R9
+R5
 r1
 !s85 0
 31
-R7
+R11
 !s107 eight_bit_adder_tester.vwf.vt|
 !s90 -work|work|eight_bit_adder_tester.vwf.vt|
 !i113 1
-R10
-vone_bit_adder
-Z12 !s110 1567807187
+R8
+vfull_adder
+Z12 !s110 1567871726
 !i10b 1
-!s100 Rn<n_09[o=^6N7zUDNOA60
-I46Nm[33OSGLMz82:4]o^J1
-R2
+!s100 ?m98mP?VVLa<8B4kUKfKk0
+IU_cnMcU5VC`YnYmHj_L]g0
+R1
 R0
-w1567807183
+w1567871724
+R2
 R3
 R4
 R5
-R6
 r1
 !s85 0
 31
-Z13 !s108 1567807187.000000
-R8
-R9
+!s108 1567871725.000000
+R6
+R7
 !i113 1
-R10
-vone_bit_adder_vlg_vec_tst
+R8
+vfull_adder_vlg_vec_tst
 R12
+!i10b 1
+!s100 V72IfER3oa7]=F5[FV1YA1
+IC7VOO6lIX=`067YWH;XNZ3
+R1
+R0
+w1567871721
+8full_adder_tester.vwf.vt
+Ffull_adder_tester.vwf.vt
+R9
+R5
+r1
+!s85 0
+31
+!s108 1567871726.000000
+!s107 full_adder_tester.vwf.vt|
+!s90 -work|work|full_adder_tester.vwf.vt|
+!i113 1
+R8
+vone_bit_adder
+Z13 !s110 1567807187
+!i10b 1
+!s100 Rn<n_09[o=^6N7zUDNOA60
+I46Nm[33OSGLMz82:4]o^J1
+R1
+R0
+w1567807183
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z14 !s108 1567807187.000000
+R6
+R7
+!i113 1
+R8
+vone_bit_adder_vlg_vec_tst
+R13
 !i10b 1
 !s100 c4mJlLY>YfN_z<ZJ[z:Y61
 IQNJJE1Kh>UhM;d]d;J1;i3
-R2
+R1
 R0
 w1567807182
 8one_bit_adder_tester.vwf.vt
 Fone_bit_adder_tester.vwf.vt
-R11
-R6
+R9
+R5
 r1
 !s85 0
 31
-R13
+R14
 !s107 one_bit_adder_tester.vwf.vt|
 !s90 -work|work|one_bit_adder_tester.vwf.vt|
 !i113 1
-R10
+R8
