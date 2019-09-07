@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/simulation/modelsim
+vc
+Z1 !s110 1567863803
+!i10b 1
+!s100 WYObj2kDBE7><cmGD?f8K2
+I=G:T?VjoHiA4eG:=eNMFd2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1567806923
+8C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c.v
+FC:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c.v
+L0 1
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z4 !s108 1567863803.000000
+!s107 C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor|C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor}
+vc_8
+R1
+!i10b 1
+!s100 kG2]UcJm]G`WF3UXUY3`T2
+IKKL<ezFDJPAzi_TlCJFg=1
+R2
+R0
+w1567813325
+8C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v
+FC:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor|C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v|
+!i113 1
+R5
+R6
+veight_bit_look_ahead_adder
+R1
+!i10b 1
+!s100 1@JhM4;F9`<>MJOa:`F=[1
+Im_UU]^]H82I7<T6nS0?_?0
+R2
+R0
+w1567808633
+8C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v
+FC:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z7 !s108 1567863802.000000
+!s107 C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor|C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v|
+!i113 1
+R5
+R6
+vfull_adder
+R1
+!i10b 1
+!s100 Jz<9DI2JLD`hXWIHIg87O3
+IP2m];D]i?73lD6RFH>A[U3
+R2
+R0
+w1567815347
+8C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v
+FC:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor|C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v|
+!i113 1
+R5
+R6
+vone_bit_adder
+!s110 1567863802
+!i10b 1
+!s100 K[]AjML`UFHNXa@1aj1;o1
+I0`e<`H?jng[>`CN=GXn>`3
+R2
+R0
+w1567806060
+8C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/one_bit_adder.v
+FC:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/one_bit_adder.v
+L0 3
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/one_bit_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor|C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/one_bit_adder.v|
+!i113 1
+R5
+R6

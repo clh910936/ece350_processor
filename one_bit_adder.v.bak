@@ -1,0 +1,10 @@
+module one_bit_adder(a, b, cin, sum);
+	input a;
+	input b;
+	input cin;
+	output sum;
+	wire OUTxor1;
+	
+	xor xor1(OUTxor1, a, b);
+	xor xor2(sum, OUTxor1, cin);
+endmodule
