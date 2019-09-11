@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor
-Sat Sep 07 15:31:40 2019
+Sun Sep 08 10:16:31 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -55,7 +55,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 07 15:31:40 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 08 10:16:31 2019       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; processor                                   ;
 ; Top-level Entity Name              ; alu                                         ;
@@ -170,24 +170,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                     ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
-; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v                        ;         ;
-; one_bit_adder.v                  ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/one_bit_adder.v              ;         ;
-; eight_bit_look_ahead_adder.v     ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v ;         ;
-; c.v                              ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c.v                          ;         ;
-; c_8.v                            ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v                        ;         ;
-; full_adder.v                     ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v                 ;         ;
-; bitwise_invert.v                 ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/bitwise_invert.v             ;         ;
-; mux_2.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_2.v                      ;         ;
-; mux_4.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v                      ;         ;
-; mux_8.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_8.v                      ;         ;
-; and32.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/and32.v                      ;         ;
-; or32.v                           ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/or32.v                       ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                         ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+---------+
+; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v                        ;         ;
+; one_bit_adder.v                  ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/one_bit_adder.v              ;         ;
+; eight_bit_look_ahead_adder.v     ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/eight_bit_look_ahead_adder.v ;         ;
+; c.v                              ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/c.v                          ;         ;
+; c_8.v                            ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/c_8.v                        ;         ;
+; full_adder.v                     ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/full_adder.v                 ;         ;
+; bitwise_invert.v                 ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/bitwise_invert.v             ;         ;
+; mux_2.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_2.v                      ;         ;
+; mux_4.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v                      ;         ;
+; mux_8.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_8.v                      ;         ;
+; and32.v                          ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/and32.v                      ;         ;
+; or32.v                           ; yes             ; User Verilog HDL File  ; C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/or32.v                       ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------+
@@ -433,305 +433,305 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sat Sep 07 15:31:15 2019
+    Info: Processing started: Sun Sep 08 10:16:07 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 1
+    Info (12023): Found entity 1: alu File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file one_bit_adder.v
-    Info (12023): Found entity 1: one_bit_adder File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/one_bit_adder.v Line: 3
+    Info (12023): Found entity 1: one_bit_adder File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/one_bit_adder.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file eight_bit_look_ahead_adder.v
-    Info (12023): Found entity 1: eight_bit_look_ahead_adder File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v Line: 1
+    Info (12023): Found entity 1: eight_bit_look_ahead_adder File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/eight_bit_look_ahead_adder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file c.v
-    Info (12023): Found entity 1: c File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c.v Line: 1
+    Info (12023): Found entity 1: c File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/c.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file c_8.v
-    Info (12023): Found entity 1: c_8 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v Line: 2
+    Info (12023): Found entity 1: c_8 File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/c_8.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
-    Info (12023): Found entity 1: full_adder File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 6
+    Info (12023): Found entity 1: full_adder File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/full_adder.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file bitwise_invert.v
-    Info (12023): Found entity 1: bitwise_invert File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/bitwise_invert.v Line: 1
+    Info (12023): Found entity 1: bitwise_invert File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/bitwise_invert.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2.v
-    Info (12023): Found entity 1: mux_2 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_2.v Line: 1
+    Info (12023): Found entity 1: mux_2 File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_4.v
-    Info (12023): Found entity 1: mux_4 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 1
+    Info (12023): Found entity 1: mux_4 File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_8.v
-    Info (12023): Found entity 1: mux_8 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_8.v Line: 1
+    Info (12023): Found entity 1: mux_8 File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_8.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file and32.v
-    Info (12023): Found entity 1: and32 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/and32.v Line: 1
+    Info (12023): Found entity 1: and32 File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/and32.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file or32.v
-    Info (12023): Found entity 1: or32 File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/or32.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at alu.v(16): created implicit net for "addersum" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+    Info (12023): Found entity 1: or32 File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/or32.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at alu.v(16): created implicit net for "addersum" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 16
 Info (12127): Elaborating entity "alu" for the top level hierarchy
-Warning (10034): Output port "isNotEqual" at alu.v(6) has no driver File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 6
-Warning (10034): Output port "isLessThan" at alu.v(6) has no driver File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 6
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:adder" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 12
-Info (12128): Elaborating entity "bitwise_invert" for hierarchy "full_adder:adder|bitwise_invert:invert" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 19
-Info (12128): Elaborating entity "c_8" for hierarchy "full_adder:adder|c_8:cc8" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 22
-Info (12128): Elaborating entity "c" for hierarchy "full_adder:adder|c_8:cc8|c:c21" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/c_8.v Line: 14
-Info (12128): Elaborating entity "eight_bit_look_ahead_adder" for hierarchy "full_adder:adder|eight_bit_look_ahead_adder:adder1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/full_adder.v Line: 27
-Info (12128): Elaborating entity "one_bit_adder" for hierarchy "full_adder:adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/eight_bit_look_ahead_adder.v Line: 8
-Info (12128): Elaborating entity "and32" for hierarchy "and32:and32_1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 13
-Info (12128): Elaborating entity "or32" for hierarchy "or32:or32_1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 14
-Info (12128): Elaborating entity "mux_8" for hierarchy "mux_8:opcodeMux" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
-Info (12128): Elaborating entity "mux_4" for hierarchy "mux_8:opcodeMux|mux_4:first_top" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_8.v Line: 8
-Info (12128): Elaborating entity "mux_2" for hierarchy "mux_8:opcodeMux|mux_4:first_top|mux_2:first_top" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 6
-Warning (10230): Verilog HDL assignment warning at mux_2.v(4): truncated value with size 32 to match size of target (1) File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_2.v Line: 4
-Warning (12030): Port "out" on the entity instantiation of "second" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 8
-Warning (12030): Port "out" on the entity instantiation of "first_bottom" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 7
-Warning (12030): Port "out" on the entity instantiation of "first_top" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 6
+Warning (10034): Output port "isNotEqual" at alu.v(6) has no driver File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 6
+Warning (10034): Output port "isLessThan" at alu.v(6) has no driver File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 6
+Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:adder" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 12
+Info (12128): Elaborating entity "bitwise_invert" for hierarchy "full_adder:adder|bitwise_invert:invert" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/full_adder.v Line: 19
+Info (12128): Elaborating entity "c_8" for hierarchy "full_adder:adder|c_8:cc8" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/full_adder.v Line: 22
+Info (12128): Elaborating entity "c" for hierarchy "full_adder:adder|c_8:cc8|c:c21" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/c_8.v Line: 14
+Info (12128): Elaborating entity "eight_bit_look_ahead_adder" for hierarchy "full_adder:adder|eight_bit_look_ahead_adder:adder1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/full_adder.v Line: 27
+Info (12128): Elaborating entity "one_bit_adder" for hierarchy "full_adder:adder|eight_bit_look_ahead_adder:adder1|one_bit_adder:add1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/eight_bit_look_ahead_adder.v Line: 8
+Info (12128): Elaborating entity "and32" for hierarchy "and32:and32_1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 13
+Info (12128): Elaborating entity "or32" for hierarchy "or32:or32_1" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 14
+Info (12128): Elaborating entity "mux_8" for hierarchy "mux_8:opcodeMux" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 16
+Info (12128): Elaborating entity "mux_4" for hierarchy "mux_8:opcodeMux|mux_4:first_top" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_8.v Line: 8
+Info (12128): Elaborating entity "mux_2" for hierarchy "mux_8:opcodeMux|mux_4:first_top|mux_2:first_top" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 6
+Warning (10230): Verilog HDL assignment warning at mux_2.v(4): truncated value with size 32 to match size of target (1) File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_2.v Line: 4
+Warning (12030): Port "out" on the entity instantiation of "second" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 8
+Warning (12030): Port "out" on the entity instantiation of "first_bottom" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 7
+Warning (12030): Port "out" on the entity instantiation of "first_top" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 6
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w1[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_top|w2[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
-    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w1[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[31]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[30]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[29]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[28]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[27]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[26]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[25]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[24]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[23]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[22]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[21]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[20]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[19]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[18]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[17]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[16]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[15]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[14]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[13]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[12]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[11]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[10]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[9]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[8]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[7]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[6]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[5]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[4]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[3]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[2]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
+    Warning (12110): Net "mux_8:opcodeMux|mux_4:first_bottom|w2[1]" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/mux_4.v Line: 5
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 16
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 16
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 16
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 16
+    Warning (12110): Net "addersum" is missing source, defaulting to GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 16
 Warning (12241): 11 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "data_result[1]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[2]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[3]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[4]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[5]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[6]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[7]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[8]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[9]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[10]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[11]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[12]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[13]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[14]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[15]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[16]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[17]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[18]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[19]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[20]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[21]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[22]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[23]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[24]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[25]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[26]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[27]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[28]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[29]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[30]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "data_result[31]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 5
-    Warning (13410): Pin "isNotEqual" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 6
-    Warning (13410): Pin "isLessThan" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 6
+    Warning (13410): Pin "data_result[1]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[2]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[3]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[4]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[5]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[6]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[7]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[8]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[9]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[10]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[11]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[12]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[13]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[14]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[15]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[16]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[17]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[18]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[19]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[20]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[21]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[22]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[23]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[24]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[25]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[26]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[27]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[28]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[29]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[30]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "data_result[31]" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 5
+    Warning (13410): Pin "isNotEqual" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 6
+    Warning (13410): Pin "isLessThan" is stuck at GND File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 9 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "data_operandA[23]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 3
-    Warning (15610): No output dependent on input pin "data_operandB[23]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 3
-    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_shiftamt[0]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_shiftamt[1]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_shiftamt[2]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_shiftamt[3]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_shiftamt[4]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/ece350_processor/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "data_operandA[23]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 3
+    Warning (15610): No output dependent on input pin "data_operandB[23]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 3
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_shiftamt[0]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_shiftamt[1]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_shiftamt[2]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_shiftamt[3]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_shiftamt[4]" File: C:/Users/carri/Documents/College/Semester 5/ECE350/f2019-ece350-alu-437/alu.v Line: 4
 Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 74 input pins
     Info (21059): Implemented 35 output pins
     Info (21061): Implemented 33 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 250 warnings
-    Info: Peak virtual memory: 4959 megabytes
-    Info: Processing ended: Sat Sep 07 15:31:40 2019
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:52
+    Info: Peak virtual memory: 4960 megabytes
+    Info: Processing ended: Sun Sep 08 10:16:31 2019
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:48
 
 
